@@ -1,0 +1,49 @@
+import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+
+import Home from "@/pages/Home";
+import ModuleOne from "@/pages/ModuleOne";
+import ModuleTwo from "@/pages/ModuleTwo";
+import ModuleThree from "@/pages/ModuleThree";
+import ModuleFour from "@/pages/ModuleFour";
+import ModuleFive from "@/pages/ModuleFive";
+import ModuleSix from "@/pages/ModuleSix";
+import ModuleSeven from "@/pages/ModuleSeven";
+
+export function useAppRoutes() {
+  const routes = [
+    {
+      Page: Home,
+      path: ApplicationRoutes.HOME,
+    },
+    {
+      Page: ModuleOne,
+      path: ApplicationRoutes.MODULE_ONE,
+    },
+    {
+      Page: ModuleTwo,
+      path: ApplicationRoutes.MODULE_TWO,
+    },
+    {
+      Page: ModuleThree,
+      path: ApplicationRoutes.MODULE_THREE,
+    },
+    {
+      Page: ModuleFour,
+      path: ApplicationRoutes.MODULE_FOUR,
+    },
+    {
+      Page: ModuleFive,
+      path: ApplicationRoutes.MODULE_FIVE,
+    },
+    {
+      Page: ModuleSix,
+      path: ApplicationRoutes.MODULE_SIX,
+    },
+    {
+      Page: ModuleSeven,
+      path: ApplicationRoutes.MODULE_SEVEN,
+    },
+  ];
+
+  return routes;
+}
