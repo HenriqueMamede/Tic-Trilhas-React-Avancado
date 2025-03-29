@@ -4,11 +4,11 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
-  NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { useGetLayoutNavigationItems } from "../../LayoutHooks";
 import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const navigationItems = useGetLayoutNavigationItems();
@@ -19,8 +19,8 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <NavigationMenu className="justify-normal bg-[#0a0a0a] min-h-screen flex flex-col space-y-2 w-48 p-4 border-t border-r rounded-tr-lg rounded-br-lg shadow-md">
+    <header className="max-w-36">
+      <NavigationMenu className="justify-normal bg-[#0a0a0a] min-h-screen flex flex-col space-y-2 w-48 p-4 border-r rounded-tr-lg rounded-br-lg shadow-md">
         <div className="mb-4">
           <img
             src={LogoTicTrilhas}
@@ -30,15 +30,15 @@ const Header = () => {
           />
         </div>
 
-        <NavigationMenuList className="flex flex-col space-y-2 text-white">
+        <NavigationMenuList className="flex flex-col space-y-2 text-white gap-4">
           {navigationItems.map((option, index) => (
             <NavigationMenuItem key={index}>
-              <NavigationMenuLink
-                href={option.link}
-                className="px-4 py-2 rounded-lg hover:bg-gray-100"
+              <NavLink
+                className="px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-black"
+                to={option.link}
               >
                 {option.label}
-              </NavigationMenuLink>
+              </NavLink>
             </NavigationMenuItem>
           ))}
         </NavigationMenuList>
