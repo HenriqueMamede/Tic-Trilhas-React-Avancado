@@ -15,7 +15,7 @@ function Layout() {
       {!isHomePage && <Header />}
 
       <main
-        className="relative h-full flex-1 overflow-hidden"
+        className="relative h-full flex-1 overflow-hidden p-5"
         id="main-content"
       >
         <Outlet />
