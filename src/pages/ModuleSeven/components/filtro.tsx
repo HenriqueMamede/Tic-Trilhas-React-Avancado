@@ -3,14 +3,14 @@ import { Status } from "../interface";
 
 const filtrarTexto: { [key: string]: string } = {
   todas: "Todas tarefas",
-  finalizada: "Tarefas finalizadas",
-  naoFinalizada: "Tarefas não finalizadas",
+  finalizadas: "Tarefas finalizadas",
+  "nao-finalizadas": "Tarefas não finalizadas",
 };
 
 const filtros = [
   { label: "Todas", value: "todas" },
-  { label: "Finalizadas", value: "finalizada" },
-  { label: "Não finalizadas", value: "nao-finalizada" },
+  { label: "Finalizadas", value: "finalizadas" },
+  { label: "Não finalizadas", value: "nao-finalizadas" },
 ];
 
 interface FiltroProps {

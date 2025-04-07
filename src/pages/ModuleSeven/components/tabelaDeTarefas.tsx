@@ -38,8 +38,8 @@ function TabelaDeTarefas({
       <TableBody>
         {tarefas.map((tarefa) => (
           <TableRow key={tarefa.id}>
-            <TableCell>{tarefa.texto}</TableCell>
-            <TableCell>
+            <TableCell data-testid="texto-tarefa">{tarefa.texto}</TableCell>
+            <TableCell data-testid="status-tarefas">
               {tarefa.finalizada ? "Finalizada" : "Não finalizada"}
             </TableCell>
             <TableCell>

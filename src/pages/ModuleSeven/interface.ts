@@ -4,4 +4,4 @@ export interface ITarefas {
   finalizada: boolean;
 }
 
-export type Status = "todas" | "finalizada" | "nao-finalizada";
+export type Status = "todas" | "finalizadas" | "nao-finalizadas";

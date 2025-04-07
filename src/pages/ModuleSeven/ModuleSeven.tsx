@@ -9,8 +9,8 @@ function ModuleSeven() {
   const tarefasFiltradas = useMemo(
     () =>
       dados.filter((task) => {
-        if (filtro === "finalizada") return task.finalizada;
-        if (filtro === "nao-finalizada") return !task.finalizada;
+        if (filtro === "finalizadas") return task.finalizada;
+        if (filtro === "nao-finalizadas") return !task.finalizada;
         return true;
       }),
     [dados, filtro]
