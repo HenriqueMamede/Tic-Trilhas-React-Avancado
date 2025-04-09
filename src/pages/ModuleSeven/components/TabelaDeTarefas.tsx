@@ -6,12 +6,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ITarefas } from "../interface";
 import { MdDelete } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { ImRadioUnchecked } from "react-icons/im";
-import EmptyState from "./emptyState";
+import EmptyState from "./EmptyState";
 import { Button } from "@/components/ui/button";
+import { ITarefas } from "../interface";
 
 interface TabelaDeTarefasProps {
   tarefas: ITarefas[];
