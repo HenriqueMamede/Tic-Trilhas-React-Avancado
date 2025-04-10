@@ -10,6 +10,7 @@ import ModuleSix from "@/pages/ModuleSix";
 import ModuleSeven from "@/pages/ModuleSeven";
 import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
+import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
 
 export function useAppRoutes() {
   const routes = [
@@ -44,6 +45,10 @@ export function useAppRoutes() {
     {
       Page: ExampleTwo,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO,
+    },
+    {
+      Page: ExampleThree,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE,
     },
     {
       Page: ModuleSix,
