@@ -8,6 +8,7 @@ import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
 import ModuleSix from "@/pages/ModuleSix";
 import ModuleSeven from "@/pages/ModuleSeven";
+import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 
 export function useAppRoutes() {
   const routes = [
@@ -34,6 +35,10 @@ export function useAppRoutes() {
     {
       Page: ModuleFive,
       path: ApplicationRoutes.MODULE_FIVE,
+    },
+    {
+      Page: ExampleOne,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE,
     },
     {
       Page: ModuleSix,
