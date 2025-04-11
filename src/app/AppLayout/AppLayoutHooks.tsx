@@ -16,6 +16,7 @@ import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1-LoginYup.tsx";
 import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2-FormularioCadastro.tsx";
 import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
 import ExampleFourCompleted from "@/pages/ModuleFive/Completed/4-ListaDeParticipantes";
+import ExampleUseFormContext from "@/pages/ModuleFive/Completed/UseFormContext-Pai.tsx";
 
 export function useAppRoutes() {
   const routes = [
@@ -74,6 +75,10 @@ export function useAppRoutes() {
     {
       Page: ExampleFourCompleted,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR_COMPLETED,
+    },
+    {
+      Page: ExampleUseFormContext,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_USEFORMCONTEXT,
     },
     {
       Page: ModuleSix,

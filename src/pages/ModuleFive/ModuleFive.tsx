@@ -17,6 +17,7 @@ const ModuleFive = () => {
     { label: "Exemplo 2", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO_COMPLETED },
     { label: "Exemplo 3", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE_COMPLETED },
     { label: "Exemplo 4", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR_COMPLETED },
+    { label: "useFormContext", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_USEFORMCONTEXT },
   ];
 
   const handleGoModulePages = (route: string) => {

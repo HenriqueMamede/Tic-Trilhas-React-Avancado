@@ -13,6 +13,7 @@ export enum ApplicationRoutes {
   MODULE_FIVE_EXAMPLE_TWO_COMPLETED = "/module-five/example-two-completed",
   MODULE_FIVE_EXAMPLE_THREE_COMPLETED = "/module-five/example-three-completed",
   MODULE_FIVE_EXAMPLE_FOUR_COMPLETED = "/module-five/example-four-completed",
+  MODULE_FIVE_EXAMPLE_USEFORMCONTEXT = "/module-five/example-useformcontext",
   MODULE_SIX = "/module-six",
   MODULE_SEVEN = "/module-seven",
 }
