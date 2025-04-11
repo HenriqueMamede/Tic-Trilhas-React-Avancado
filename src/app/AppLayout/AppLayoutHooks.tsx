@@ -12,6 +12,10 @@ import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
 import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
 import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
+import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1-LoginYup.tsx";
+import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2-FormularioCadastro.tsx";
+import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
+import ExampleFourCompleted from "@/pages/ModuleFive/Completed/4-ListaDeParticipantes";
 
 export function useAppRoutes() {
   const routes = [
@@ -54,6 +58,22 @@ export function useAppRoutes() {
     {
       Page: ExampleFour,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR,
+    },
+    {
+      Page: ExampleOneCompleted,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE_COMPLETED,
+    },
+    {
+      Page: ExampleTwoCompleted,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO_COMPLETED,
+    },
+    {
+      Page: ExampleThreeCompleted,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE_COMPLETED,
+    },
+    {
+      Page: ExampleFourCompleted,
+      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR_COMPLETED,
     },
     {
       Page: ModuleSix,

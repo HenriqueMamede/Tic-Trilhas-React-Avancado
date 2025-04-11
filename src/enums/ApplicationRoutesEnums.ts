@@ -9,6 +9,10 @@ export enum ApplicationRoutes {
   MODULE_FIVE_EXAMPLE_TWO = "/module-five/example-two",
   MODULE_FIVE_EXAMPLE_THREE = "/module-five/example-three",
   MODULE_FIVE_EXAMPLE_FOUR = "/module-five/example-four",
+  MODULE_FIVE_EXAMPLE_ONE_COMPLETED = "/module-five/example-one-completed",
+  MODULE_FIVE_EXAMPLE_TWO_COMPLETED = "/module-five/example-two-completed",
+  MODULE_FIVE_EXAMPLE_THREE_COMPLETED = "/module-five/example-three-completed",
+  MODULE_FIVE_EXAMPLE_FOUR_COMPLETED = "/module-five/example-four-completed",
   MODULE_SIX = "/module-six",
   MODULE_SEVEN = "/module-seven",
 }

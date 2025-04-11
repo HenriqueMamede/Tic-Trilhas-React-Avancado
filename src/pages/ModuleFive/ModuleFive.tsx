@@ -12,6 +12,13 @@ const ModuleFive = () => {
     { label: "Exemplo 4", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR },
   ];
 
+  const completedExamples = [
+    { label: "Exemplo 1", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE_COMPLETED },
+    { label: "Exemplo 2", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO_COMPLETED },
+    { label: "Exemplo 3", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE_COMPLETED },
+    { label: "Exemplo 4", route: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR_COMPLETED },
+  ];
+
   const handleGoModulePages = (route: string) => {
     navigate(route);
   };
@@ -27,7 +34,18 @@ const ModuleFive = () => {
           para o exemplo desejado.
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
+          <p>Exemplos iniciais - repositório</p>
           {examples.map((example) => (
+            <Button
+              key={example.route}
+              onClick={() => handleGoModulePages(example.route)}
+              className="cursor-pointer"
+            >
+              {example.label}
+            </Button>
+          ))}
+          <p>Exemplos completos</p>
+          {completedExamples.map((example) => (
             <Button
               key={example.route}
               onClick={() => handleGoModulePages(example.route)}
