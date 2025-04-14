@@ -7,6 +7,7 @@ import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
 import ModuleTwoExampleTwo from '@/pages/ModuleTwo/Exemplos/ExemploDois';
 import ModuleTwoExampleThree from '@/pages/ModuleTwo/Exemplos/ExemploTres';
 import ModuleTwoExampleFour from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
+import ModuleTwoExampleFive from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -46,6 +47,10 @@ export function useAppRoutes() {
     {
       Page: ModuleTwoExampleFour,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
+    },
+    {
+      Page: ModuleTwoExampleFive,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
     },
     {
       Page: ModuleThree,
