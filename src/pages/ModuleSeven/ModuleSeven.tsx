@@ -1,16 +1,17 @@
 import { useState, useMemo } from "react";
+import { Status } from "@/enums/TarefasEnums";
+import { Tarefas } from "@/types";
 import { AdicionarTarefasForm, Filtro, TabelaDeTarefas } from "./components";
-import { ITarefas, Status } from "./interface";
 
 function ModuleSeven() {
-  const [dados, setDados] = useState<ITarefas[]>([]);
-  const [filtro, setFiltro] = useState<Status>("todas");
+  const [dados, setDados] = useState<Tarefas[]>([]);
+  const [filtro, setFiltro] = useState<Status>(Status.TODAS);
 
   const tarefasFiltradas = useMemo(
     () =>
       dados.filter((task) => {
-        if (filtro === "finalizadas") return task.finalizada;
-        if (filtro === "nao-finalizadas") return !task.finalizada;
+        if (filtro === Status.FINALIZADAS) return task.finalizada;
+        if (filtro === Status.NAO_FINALIZADAS) return !task.finalizada;
         return true;
       }),
     [dados, filtro]
@@ -28,7 +29,7 @@ function ModuleSeven() {
   };
 
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <div className="flex flex-col gap-6 w-full p-5">
       <AdicionarTarefasForm setDados={setDados} />
       <Filtro setFiltro={setFiltro} filtro={filtro} />
       <TabelaDeTarefas

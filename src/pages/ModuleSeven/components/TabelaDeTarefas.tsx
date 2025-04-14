@@ -9,12 +9,12 @@ import {
 import { MdDelete } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { ImRadioUnchecked } from "react-icons/im";
-import EmptyState from "./EmptyState";
 import { Button } from "@/components/ui/button";
-import { ITarefas } from "../interface";
+import { Tarefas } from "@/types";
+import EmptyState from "./EmptyState";
 
 interface TabelaDeTarefasProps {
-  tarefas: ITarefas[];
+  tarefas: Tarefas[];
   removerTarefa: (id: number) => void;
   mudarStatus: (id: number) => void;
 }
@@ -28,10 +28,10 @@ function TabelaDeTarefas({
 
   return (
     <Table>
-      <TableHeader>
+      <TableHeader className="bg-blue-500">
         <TableRow>
-          <TableHead>Tarefa</TableHead>
-          <TableHead className="min-w-[100px]">Status</TableHead>
+          <TableHead className="text-white">Tarefa</TableHead>
+          <TableHead className="min-w-[100px] text-white">Status</TableHead>
           <TableHead className="w-[50px]" />
         </TableRow>
       </TableHeader>

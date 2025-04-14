@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Tarefas } from "@/types";
 import { FormEvent, useState } from "react";
-import { ITarefas } from "../interface";
 
 interface AdicionarTarefasFormProps {
-  setDados: React.Dispatch<React.SetStateAction<ITarefas[]>>;
+  setDados: React.Dispatch<React.SetStateAction<Tarefas[]>>;
 }
 
 function AdicionarTarefasForm({ setDados }: AdicionarTarefasFormProps) {
