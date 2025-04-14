@@ -1,21 +1,21 @@
 import { Badge } from "@/components/ui/badge";
-import { Status } from "../interface";
+import { Status } from "@/enums/TarefasEnums";
 
 const filtrarTexto: { [key: string]: string } = {
-  todas: "Todas tarefas",
-  finalizadas: "Tarefas finalizadas",
-  "nao-finalizadas": "Tarefas não finalizadas",
+  [Status.TODAS]: "Todas tarefas",
+  [Status.FINALIZADAS]: "Tarefas finalizadas",
+  [Status.NAO_FINALIZADAS]: "Tarefas não finalizadas",
 };
 
 const filtros = [
-  { label: "Todas", value: "todas" },
-  { label: "Finalizadas", value: "finalizadas" },
-  { label: "Não finalizadas", value: "nao-finalizadas" },
+  { label: "Todas", value: Status.TODAS },
+  { label: "Finalizadas", value: Status.FINALIZADAS },
+  { label: "Não finalizadas", value: Status.NAO_FINALIZADAS },
 ];
 
 interface FiltroProps {
   setFiltro: (filtro: Status) => void;
-  filtro: string;
+  filtro: Status;
 }
 
 function Filtro({ setFiltro, filtro }: FiltroProps) {
@@ -32,7 +32,7 @@ function Filtro({ setFiltro, filtro }: FiltroProps) {
           <Badge
             key={value}
             className={`cursor-pointer ${lidarComFiltroAtivo(value)}`}
-            onClick={() => setFiltro(value as Status)}
+            onClick={() => setFiltro(value)}
             data-testid={`filtro-${value}`}
           >
             {label}
