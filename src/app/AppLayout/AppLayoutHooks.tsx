@@ -5,6 +5,7 @@ import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
 import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
 import ModuleTwoExampleTwo from '@/pages/ModuleTwo/Exemplos/ExemploDois';
+import ModuleTwoExampleThree from '@/pages/ModuleTwo/Exemplos/ExemploTres';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -36,6 +37,10 @@ export function useAppRoutes() {
     {
       Page: ModuleTwoExampleTwo,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO,
+    },
+    {
+      Page: ModuleTwoExampleThree,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE,
     },
     {
       Page: ModuleThree,
