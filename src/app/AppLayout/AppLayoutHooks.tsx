@@ -3,6 +3,7 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Home from "@/pages/Home";
 import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
+import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -26,6 +27,10 @@ export function useAppRoutes() {
     {
       Page: ModuleTwo,
       path: ApplicationRoutes.MODULE_TWO,
+    },
+    {
+      Page: ModuleTwoExampleOne,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE,
     },
     {
       Page: ModuleThree,
