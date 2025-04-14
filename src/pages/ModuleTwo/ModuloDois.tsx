@@ -10,6 +10,14 @@ const examples = [
   { label: "forwardRef e useImperativeHandle", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE },
 ];
 
+const completedExamples = [
+  { label: "useCallback", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE_COMPLETED },
+  { label: "useMemo", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO_COMPLETED },
+  { label: "useDeferredValue", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE_COMPLETED },
+  { label: "useTransition", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR_COMPLETED },
+  { label: "forwardRef e useImperativeHandle", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE_COMPLETED },
+];
+
 const ModuloDois = () => {
   const navigate = useNavigate();
 
@@ -29,6 +37,20 @@ const ModuloDois = () => {
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
           {examples.map((example) => (
+            <Button
+              key={example.route}
+              onClick={() => handleGoModulePages(example.route)}
+              className="cursor-pointer"
+            >
+              {example.label}
+            </Button>
+          ))}
+        </div>
+        <p className="text-lg font-light my-4">
+          Exemplo completo de cada hook.
+        </p>
+        <div className="flex flex-col items-center gap-2 w-full">
+          {completedExamples.map((example) => (
             <Button
               key={example.route}
               onClick={() => handleGoModulePages(example.route)}

@@ -7,6 +7,12 @@ import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
 import ModuleTwoExampleTwo from '@/pages/ModuleTwo/Exemplos/ExemploDois';
 import ModuleTwoExampleThree from '@/pages/ModuleTwo/Exemplos/ExemploTres';
 import ModuleTwoExampleFour from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
+import ModuleTwoExampleFive from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
+import ModuleTwoExampleOneCompleted from '@/pages/ModuleTwo/Completos/1-UseCallback';
+import ModuleTwoExampleTwoCompleted from '@/pages/ModuleTwo/Completos/2-UseMemo';
+import ModuleTwoExampleThreeCompleted from '@/pages/ModuleTwo/Completos/3-UseDeferredValue';
+import ModuleTwoExampleFourCompleted from '@/pages/ModuleTwo/Completos/4-UseTransition';
+import ModuleTwoExampleFiveCompleted from '@/pages/ModuleTwo/Completos/5-forwardRefAndUseImperativeHandle';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -46,6 +52,30 @@ export function useAppRoutes() {
     {
       Page: ModuleTwoExampleFour,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
+    },
+    {
+      Page: ModuleTwoExampleFive,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
+    },
+    {
+      Page: ModuleTwoExampleOneCompleted,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE_COMPLETED,
+    },
+    {
+      Page: ModuleTwoExampleTwoCompleted,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO_COMPLETED,
+    },
+    {
+      Page: ModuleTwoExampleThreeCompleted,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE_COMPLETED,
+    },
+    {
+      Page: ModuleTwoExampleFourCompleted,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR_COMPLETED,
+    },
+    {
+      Page: ModuleTwoExampleFiveCompleted,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE_COMPLETED,
     },
     {
       Page: ModuleThree,
