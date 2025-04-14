@@ -18,7 +18,7 @@ interface FiltroProps {
   filtro: Status;
 }
 
-function Filtro({ setFiltro, filtro }: FiltroProps) {
+const Filtro = ({ setFiltro, filtro }: FiltroProps) => {
   const lidarComFiltroAtivo = (value: string) => {
     if (filtro === value) return "bg-blue-500 text-white hover:bg-blue-600";
     return "inherit";
@@ -44,6 +44,6 @@ function Filtro({ setFiltro, filtro }: FiltroProps) {
       </p>
     </div>
   );
-}
+};
 
 export default Filtro;

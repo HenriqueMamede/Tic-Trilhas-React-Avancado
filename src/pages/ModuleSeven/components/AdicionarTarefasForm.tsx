@@ -7,7 +7,7 @@ interface AdicionarTarefasFormProps {
   setDados: React.Dispatch<React.SetStateAction<Tarefas[]>>;
 }
 
-function AdicionarTarefasForm({ setDados }: AdicionarTarefasFormProps) {
+const AdicionarTarefasForm = ({ setDados }: AdicionarTarefasFormProps) => {
   const [adicionarTarefa, setAdicionarTarefa] = useState("");
 
   const lidarComAdicaoDeTarefas = (e: FormEvent) => {

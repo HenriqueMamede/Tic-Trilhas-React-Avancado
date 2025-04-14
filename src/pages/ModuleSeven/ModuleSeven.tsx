@@ -3,7 +3,7 @@ import { Status } from "@/enums/TarefasEnums";
 import { Tarefas } from "@/types";
 import { AdicionarTarefasForm, Filtro, TabelaDeTarefas } from "./components";
 
-function ModuleSeven() {
+const ModuleSeven = () => {
   const [dados, setDados] = useState<Tarefas[]>([]);
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
 
