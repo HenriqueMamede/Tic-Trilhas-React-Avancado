@@ -1,7 +1,8 @@
 import { useState, useMemo } from "react";
 import { Status } from "@/enums/TarefasEnums";
 import { Tarefas } from "@/types";
-import { AdicionarTarefasForm, Filtro, TabelaDeTarefas } from "./components";
+import { Filtro } from "@/components";
+import { AdicionarTarefasForm,  TabelaDeTarefas } from "./components";
 
 const ModuleSeven = () => {
   const [dados, setDados] = useState<Tarefas[]>([]);
