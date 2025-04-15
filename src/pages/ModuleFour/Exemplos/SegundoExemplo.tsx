@@ -18,7 +18,7 @@ const tarefas = [
   { id: 4, texto: "Lavar roupa", finalizada: true },
 ];
 
-function SegundoExemplo() {
+const SegundoExemplo = () => {
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
   const [tarefasFiltradas, setTarefasFiltradas] = useState<Tarefas[]>([]);
 

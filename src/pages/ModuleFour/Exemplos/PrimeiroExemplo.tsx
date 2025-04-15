@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
 import { useEffect, useState } from "react";
 
-function PrimeiroExemplo() {
+const PrimeiroExemplo = () => {
   const [dadosDoFomulario, setDadosDoFomulario] = useState({
     nome: "",
     email: "",
