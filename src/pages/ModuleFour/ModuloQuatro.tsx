@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 
-const ModuleFive = () => {
+const ModuloQuatro = () => {
   const navigate = useNavigate();
 
   const exemplos = [
@@ -40,4 +40,4 @@ const ModuleFive = () => {
   );
 };
 
-export default ModuleFive;
+export default ModuloQuatro;
