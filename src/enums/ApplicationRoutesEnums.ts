@@ -4,6 +4,8 @@ export enum ApplicationRoutes {
   MODULE_TWO = "/module-two",
   MODULE_THREE = "/module-three",
   MODULE_FOUR = "/module-four",
+  MODULE_FOUR_EXAMPLE_ONE = "/module-four/example-one",
+  MODULE_FOUR_EXAMPLE_TWO = "/module-four/example-two",
   MODULE_FIVE = "/module-five",
   MODULE_FIVE_EXAMPLE_ONE = "/module-five/example-one",
   MODULE_FIVE_EXAMPLE_TWO = "/module-five/example-two",
