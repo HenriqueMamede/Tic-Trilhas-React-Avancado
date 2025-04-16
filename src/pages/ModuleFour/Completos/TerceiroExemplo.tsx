@@ -23,8 +23,9 @@ const tarefas: Tarefas[] = [
 const TerceiroExemplo = () => {
   const [dados, setDados] = useState<Tarefas[]>(tarefas);
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
-  const [adicionarTarefa, setAdicionarTarefa] = useState(""); // Uso do useMemo para memorizar os cálculos
-
+  const [adicionarTarefa, setAdicionarTarefa] = useState(""); 
+  
+  // Uso do useMemo para memorizar os cálculos
   const tarefasFiltradas = useMemo(
     () =>
       dados.filter((task) => {

@@ -31,7 +31,7 @@ const TerceiroExemplo = () => {
     return true;
   });
 
-  // Uso do useEffect para monitorar se o estado data mudou e resetar o estado setAddTasks
+  // Uso do useEffect para monitorar se o estado data mudou e resetar o estado setAdicionarTarefa
   useEffect(() => {
     setAdicionarTarefa("");
   }, [dados]);

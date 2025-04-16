@@ -31,7 +31,7 @@ const SegundoExemplo = () => {
   return (
     <div className="flex flex-col gap-6 w-full p-5">
       <h1 className="text-xl text-neutral-800">Segundo Exemplo</h1>
-      <Filtro filtro={filtro} setFiltro={setFiltro} showLabel={false} />
+      <Filtro filtro={filtro} setFiltro={setFiltro} mostrarTexto={false} />
       <Table>
         <TableHeader className="bg-blue-500">
           <TableRow>
