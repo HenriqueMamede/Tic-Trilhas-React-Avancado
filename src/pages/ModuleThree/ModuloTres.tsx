@@ -12,6 +12,13 @@ const ModuloTres = () => {
     { label: "Throttle", rota: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR },
   ];
 
+  const exemplosCompletos = [
+    { label: "React Lazy", rota: ApplicationRoutes.MODULE_THREE_EXAMPLE_ONE_COMPLETED },
+    { label: "Suspense", rota: ApplicationRoutes.MODULE_THREE_EXAMPLE_TWO_COMPLETED },
+    { label: "Debounce", rota: ApplicationRoutes.MODULE_THREE_EXAMPLE_THREE_COMPLETED },
+    { label: "Throttle", rota: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR_COMPLETED },
+  ];
+
   const lidarComIdaParaRotas = (rota: string) => {
     navigate(rota);
   };
@@ -28,6 +35,20 @@ const ModuloTres = () => {
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
           {exemplos.map((exemplo) => (
+            <Button
+              key={exemplo.rota}
+              onClick={() => lidarComIdaParaRotas(exemplo.rota)}
+              className="cursor-pointer"
+            >
+              {exemplo.label}
+            </Button>
+          ))}
+        </div>
+        <p className="text-lg font-light my-4">
+          Exemplos completos para o módulo 3
+        </p>
+        <div className="flex flex-col items-center gap-2 w-full">
+          {exemplosCompletos.map((exemplo) => (
             <Button
               key={exemplo.rota}
               onClick={() => lidarComIdaParaRotas(exemplo.rota)}

@@ -8,6 +8,10 @@ import ModuleThreeExampleOne from "@/pages/ModuleThree/Exemplos/ExemploUm";
 import ModuleThreeExampleTwo from "@/pages/ModuleThree/Exemplos/ExemploDois";
 import ModuleThreeExampleThree from "@/pages/ModuleThree/Exemplos/ExemploTres";
 import ModuleThreeExampleFour from "@/pages/ModuleThree/Exemplos/ExemploQuatro";
+import ModuleThreeExampleOneCompleted from "@/pages/ModuleThree/Completos/1-ReactLazy";
+import ModuleThreeExampleTwoCompleted from "@/pages/ModuleThree/Completos/2-Suspense";
+import ModuleThreeExampleThreeCompleted from "@/pages/ModuleThree/Completos/3-Debounce";
+import ModuleThreeExampleFourCompleted from "@/pages/ModuleThree/Completos/4-Throttle";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
 import ModuleSix from "@/pages/ModuleSix";
@@ -50,6 +54,22 @@ export function useAppRoutes() {
     {
       Page: ModuleThreeExampleFour,
       path: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR,
+    },
+    {
+      Page: ModuleThreeExampleOneCompleted,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_ONE_COMPLETED,
+    },
+    {
+      Page: ModuleThreeExampleTwoCompleted,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_TWO_COMPLETED,
+    },
+    {
+      Page: ModuleThreeExampleThreeCompleted,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_THREE_COMPLETED,
+    },
+    {
+      Page: ModuleThreeExampleFourCompleted,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR_COMPLETED,
     },
     {
       Page: ModuleFour,
