@@ -6,7 +6,7 @@ interface Item {
   nome: string;
 }
 
-function BuscaDeItens() {
+function ExemloQuatro() {
   // Lista de itens (simulando uma lista grande de dados)
   const itens: Item[] = useMemo(() => {
     return Array.from({ length: 10000 }, (_, indice) => ({ nome: `Item ${indice}` }));
@@ -54,4 +54,4 @@ function BuscaDeItens() {
     </div>
   );
 }
-export default BuscaDeItens;
+export default ExemloQuatro;

@@ -3,11 +3,11 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Home from "@/pages/Home";
 import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
-import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
-import ModuleTwoExampleTwo from '@/pages/ModuleTwo/Exemplos/ExemploDois';
-import ModuleTwoExampleThree from '@/pages/ModuleTwo/Exemplos/ExemploTres';
-import ModuleTwoExampleFour from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
-import ModuleTwoExampleFive from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
+import ModuloDoisExemploUm from '@/pages/ModuleTwo/Exemplos/ExemploUm';
+import ModuloDoisExemploDois from '@/pages/ModuleTwo/Exemplos/ExemploDois';
+import ModuloDoisExemploTres from '@/pages/ModuleTwo/Exemplos/ExemploTres';
+import ModuloDoisExemploQuatro from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
+import ModuloDoisExemploCinco from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -33,23 +33,23 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_TWO,
     },
     {
-      Page: ModuleTwoExampleOne,
+      Page: ModuloDoisExemploUm,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE,
     },
     {
-      Page: ModuleTwoExampleTwo,
+      Page: ModuloDoisExemploDois,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO,
     },
     {
-      Page: ModuleTwoExampleThree,
+      Page: ModuloDoisExemploTres,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE,
     },
     {
-      Page: ModuleTwoExampleFour,
+      Page: ModuloDoisExemploQuatro,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
     },
     {
-      Page: ModuleTwoExampleFive,
+      Page: ModuloDoisExemploCinco,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
     },
     {

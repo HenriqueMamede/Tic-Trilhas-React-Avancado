@@ -16,7 +16,7 @@ const usuarios: IUsuario[] = [
   // ... mais 1000 usuários
 ];
 
-function Usuarios() {
+function ExemploDois() {
   // Filtragem de usuários ativos, executada toda vez que o componente for renderizado
   const usuariosAtivos = usuarios.filter((usuario) => usuario.ativo);
 
@@ -42,4 +42,4 @@ function Usuarios() {
   )
 }
 
-export default Usuarios;
+export default ExemploDois;

@@ -1,7 +1,7 @@
 import InputCustomizado from "@/pages/ModuleTwo/Exemplos/components/InputCustomizado.tsx";
 import { Button } from "@/components/ui/button.tsx";
 
-function ComponentePai() {
+function ExemploCinco() {
   return (
     <div className="flex flex-col gap-8 items-center justify-center h-screen">
       <div className="p-4 bg-gray-100 rounded-lg">
@@ -18,4 +18,4 @@ function ComponentePai() {
   );
 }
 
-export default ComponentePai;
+export default ExemploCinco;
