@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 
 const queryClient = new QueryClient();
 
-const MostrarUsuario = () => {
+const ExemploDois = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <div className='flex flex-col gap-6 items-center justify-center h-screen'>
@@ -19,4 +19,4 @@ const MostrarUsuario = () => {
   );
 };
 
-export default MostrarUsuario;
+export default ExemploDois;

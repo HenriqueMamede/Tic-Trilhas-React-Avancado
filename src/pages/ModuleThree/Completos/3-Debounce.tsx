@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input.tsx";
 
-function ExibirBusca() {
+function ExemploTres() {
   const [busca, setBusca] = useState('');
   const [buscaDebounced, setBuscaDebounced] = useState('');
 
@@ -28,4 +28,4 @@ function ExibirBusca() {
   );
 }
 
-export default ExibirBusca;
+export default ExemploTres;
