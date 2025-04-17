@@ -6,15 +6,18 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 // Definição do esquema de validação usando Yup
+
+const somenteLetras = /^[A-Za-z]+$/; // Regex para permitir apenas letras
+
 const schema = yup.object({
   nome: yup
     .string()
-    .matches(/^[A-Za-z]+$/, "Nome deve conter apenas letras") // Validação para permitir apenas letras
+    .matches(somenteLetras, "Nome deve conter apenas letras") // Validação para permitir apenas letras
     .min(3, "Nome muito pequeno")
     .required("Nome é obrigatório"), // Validação para campo obrigatório
   sobrenome: yup
     .string()
-    .matches(/^[A-Za-z]+$/, "Sobrenome deve conter apenas letras")
+    .matches(somenteLetras, "Sobrenome deve conter apenas letras")
     .min(3, "Sobrenome muito pequeno")
     .required("Sobrenome é obrigatório"),
   email: yup
@@ -66,11 +69,10 @@ function FormularioCadastroCompleto() {
             Nome <span className="text-red-500">*</span>
           </Label>
           <div>
-            <Input
-              id="nome"
-              {...register("nome")}
-            />
-            <p className="text-red-500 text-sm">{errors.nome?.message as string}</p>
+            <Input id="nome" {...register("nome")} />
+            <p className="text-red-500 text-sm">
+              {errors.nome?.message as string}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -78,11 +80,10 @@ function FormularioCadastroCompleto() {
             Sobrenome <span className="text-red-500">*</span>
           </Label>
           <div>
-            <Input
-              id="sobrenome"
-              {...register("sobrenome")}
-            />
-            <p className="text-red-500 text-sm">{errors.sobrenome?.message as string}</p>
+            <Input id="sobrenome" {...register("sobrenome")} />
+            <p className="text-red-500 text-sm">
+              {errors.sobrenome?.message as string}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -90,11 +91,10 @@ function FormularioCadastroCompleto() {
             Email <span className="text-red-500">*</span>
           </Label>
           <div>
-            <Input
-              id="email"
-              {...register("email")}
-            />
-            <p className="text-red-500 text-sm">{errors.email?.message as string}</p>
+            <Input id="email" {...register("email")} />
+            <p className="text-red-500 text-sm">
+              {errors.email?.message as string}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -102,12 +102,10 @@ function FormularioCadastroCompleto() {
             Senha <span className="text-red-500">*</span>
           </Label>
           <div>
-            <Input
-              id="senha"
-              type="password"
-              {...register("senha")}
-            />
-            <p className="text-red-500 text-sm">{errors.senha?.message as string}</p>
+            <Input id="senha" type="password" {...register("senha")} />
+            <p className="text-red-500 text-sm">
+              {errors.senha?.message as string}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -120,7 +118,9 @@ function FormularioCadastroCompleto() {
               type="password"
               {...register("confirmarSenha")}
             />
-            <p className="text-red-500 text-sm">{errors.confirmarSenha?.message as string}</p>
+            <p className="text-red-500 text-sm">
+              {errors.confirmarSenha?.message as string}
+            </p>
           </div>
         </div>
         <Button type="submit" className="w-50 cursor-pointer">

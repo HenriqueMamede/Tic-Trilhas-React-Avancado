@@ -1,9 +1,12 @@
-import { useFormContext } from 'react-hook-form';
+import { useFormContext } from "react-hook-form";
 import { Label } from "@/components/ui/label.tsx";
 import { Input } from "@/components/ui/input.tsx";
 
 function InputSenha() {
-  const { register, formState: { errors } } = useFormContext();
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
 
   return (
     <div>
@@ -13,7 +16,9 @@ function InputSenha() {
         type="password"
         {...register("senha", { required: "Senha é obrigatória" })}
       />
-      {errors.senha && <p className="text-red-500 text-sm">{errors.senha.message as string}</p>}
+      {errors.senha && (
+        <p className="text-red-500 text-sm">{errors.senha.message as string}</p>
+      )}
     </div>
   );
 }

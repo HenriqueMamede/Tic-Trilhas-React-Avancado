@@ -11,12 +11,12 @@ import ModuleSeven from "@/pages/ModuleSeven";
 import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
 import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
-import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
-import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1-LoginYup.tsx";
-import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2-FormularioCadastro.tsx";
-import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
-import ExampleFourCompleted from "@/pages/ModuleFive/Completed/4-ListaDeParticipantes";
-import ExampleUseFormContext from "@/pages/ModuleFive/Completed/UseFormContext-Pai.tsx";
+import ExampleFive from "@/pages/ModuleFive/Examples/ExampleFive";
+import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1/1-LoginYup";
+import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2/2-FormularioCadastro";
+import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3/3-LoginUserController";
+import ExampleFourCompleted from "@/pages/ModuleFive/Completed/5/5-ListaDeParticipantes";
+import ExampleUseFormContext from "@/pages/ModuleFive/Completed/4/UseFormContext-Pai";
 
 export function useAppRoutes() {
   const routes = [
@@ -57,7 +57,7 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE,
     },
     {
-      Page: ExampleFour,
+      Page: ExampleFive,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR,
     },
     {

@@ -1,5 +1,5 @@
 import { useController, Control } from "react-hook-form";
-import { IDadosFormulario } from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
+import { IDadosFormulario } from "@/pages/ModuleFive/Completed/3/3-LoginUserController";
 
 // Definição das props do componente com tipagem
 interface InputPersonalizadoProps {
@@ -24,7 +24,9 @@ function InputPersonalizado({ control, name }: InputPersonalizadoProps) {
         {...field}
         className="h-10 w-full p-2 rounded-md border border-gray-400"
       />
-      {error && <p className="text-red-500 text-sm">{error.message as string}</p>}
+      {error && (
+        <p className="text-red-500 text-sm">{error.message as string}</p>
+      )}
     </div>
   );
 }

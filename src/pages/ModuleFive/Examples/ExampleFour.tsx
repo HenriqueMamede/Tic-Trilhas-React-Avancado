@@ -1,50 +1,23 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useState } from "react";
+import InputEmail from "./InputEmail";
+import InputSenha from "./InputSenha";
+import { Button } from "@/components/ui/button.tsx";
 
-interface Participante {
-  nome: string;
+interface IDadosFormulario {
+  email: string;
+  senha: string;
 }
 
-function ListaDeParticipantes() {
-  const [participantes, setParticipantes] = useState<Participante[]>([]);
-
+function Cadastro() {
   return (
-    <div className='flex flex-col items-center justify-center h-screen gap-4'>
-      <div className='flex flex-col gap-3 items-center justify-center w-[500px] p-5 border-2 border-solid border-gray-100 rounded-2xl'>
-        <h1 className='text-xl text-neutral-800'>Cadastro de Participantes</h1>
-        <div className='flex flex-col gap-2 w-[300px]'>
-          <Label htmlFor="nome">Nome <span className='text-red-500'>*</span></Label>
-          <div className='flex gap-4'>
-            <div>
-              <Input id="nome"/>
-              <p className='text-red-500 text-sm'>error</p>
-            </div>
-            <Button type='button' variant="outline">
-              Remover
-            </Button>
-          </div>
-        </div>
-        <Button type='button' className="w-50 cursor-pointer">
-          Adicionar participante
-        </Button>
-        <Button type='submit' className="w-50 cursor-pointer">
-          Cadastrar participantes
-        </Button>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col gap-3 items-center justify-center w-[500px] p-5 border-2 border-solid border-gray-100 rounded-2xl">
+        <h1>Exemplo com useFormContext</h1>
+        <InputEmail />
+        <InputSenha />
+        <Button type="submit">Cadastrar</Button>
       </div>
-      {participantes.length > 1 && (
-        <div className='flex flex-col gap-3 items-center justify-center w-[500px] p-5'>
-          <h2>Participantes cadastrados:</h2>
-          <ul>
-            {participantes.map((participante) => (
-              <li>{participante.nome}</li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }
 
-export default ListaDeParticipantes;
+export default Cadastro;

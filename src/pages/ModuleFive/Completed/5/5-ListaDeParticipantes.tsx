@@ -15,22 +15,24 @@ interface IDadosFormulario {
 }
 
 // Definição do esquema de validação usando Yup
-const schema = yup.object({
-  participantes: yup
-    .array()
-    .of(
-      yup.object({
-        nome: yup
-          .string()
-          .required("Nome é obrigatório")
-          .min(3, "Nome muito pequeno")
-          .matches(/^[A-Za-z]+$/, "Nome deve conter apenas letras"),
-      })
-    )
-    .required(),
-}).required();
+const schema = yup
+  .object({
+    participantes: yup
+      .array()
+      .of(
+        yup.object({
+          nome: yup
+            .string()
+            .required("Nome é obrigatório")
+            .min(3, "Nome muito pequeno")
+            .matches(/^[A-Za-z]+$/, "Nome deve conter apenas letras"),
+        })
+      )
+      .required(),
+  })
+  .required();
 
-function FormularioAppend() {
+function ListaDeParticipantes() {
   const [participantes, setParticipantes] = useState<Participante[]>([]);
 
   // Hook do react-hook-form para gerenciar o estado do formulário e validação
@@ -105,4 +107,4 @@ function FormularioAppend() {
   );
 }
 
-export default FormularioAppend;
+export default ListaDeParticipantes;
