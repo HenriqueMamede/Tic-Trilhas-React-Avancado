@@ -14,11 +14,12 @@ const filtros = [
 ];
 
 interface FiltroProps {
-  setFiltro: (filtro: Status) => void;
+  mostrarTexto?: boolean;
   filtro: Status;
+  setFiltro: (filtro: Status) => void;
 }
 
-const Filtro = ({ setFiltro, filtro }: FiltroProps) => {
+const Filtro = ({ mostrarTexto = true, filtro, setFiltro }: FiltroProps) => {
   const lidarComFiltroAtivo = (value: string) => {
     if (filtro === value) return "bg-blue-500 text-white hover:bg-blue-600";
     return "inherit";
@@ -39,9 +40,11 @@ const Filtro = ({ setFiltro, filtro }: FiltroProps) => {
           </Badge>
         ))}
       </div>
-      <p className="text-sm text-gray-700" data-testid="label-filtro">
-        Visualizando: {filtrarTexto[filtro]}
-      </p>
+      {mostrarTexto && (
+        <p className="text-sm text-gray-700" data-testid="label-filtro">
+          Visualizando: {filtrarTexto[filtro]}
+        </p>
+      )}
     </div>
   );
 };
