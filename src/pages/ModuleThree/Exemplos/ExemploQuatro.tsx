@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function ExibirPosicaoDoScroll() {
+function ExemploQuatro() {
   const [posScroll, setPosScroll] = useState(0);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ function ExibirPosicaoDoScroll() {
   );
 }
 
-export default ExibirPosicaoDoScroll;
+export default ExemploQuatro;

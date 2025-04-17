@@ -3,7 +3,7 @@ import DetalhesUsuario from "@/pages/ModuleThree/components/DetalhesUsuario.tsx"
 
 const queryClient = new QueryClient();
 
-function MostrarUsuario() {
+function ExemploDois() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className='flex flex-col gap-6 items-center justify-center h-screen'>
@@ -16,4 +16,4 @@ function MostrarUsuario() {
   );
 }
 
-export default MostrarUsuario;
+export default ExemploDois;
