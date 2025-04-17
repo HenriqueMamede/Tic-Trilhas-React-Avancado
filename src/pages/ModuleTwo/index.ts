@@ -1,1 +1,1 @@
-export { default } from "./ModuleTwo";
+export { default } from "./ModuloDois.tsx";
