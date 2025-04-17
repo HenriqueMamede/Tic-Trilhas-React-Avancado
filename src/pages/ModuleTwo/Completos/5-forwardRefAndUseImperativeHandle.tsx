@@ -2,7 +2,7 @@ import { useRef } from "react";
 import InputCustomizado, { InputCustomizadoHandle } from "@/pages/ModuleTwo/Completos/components/InputCustomizado.tsx";
 import { Button } from "@/components/ui/button.tsx";
 
-function ComponentePai() {
+function ExemploCinco() {
   const inputRef = useRef<InputCustomizadoHandle>(null);
 
   return (
@@ -32,4 +32,4 @@ function ComponentePai() {
   );
 }
 
-export default ComponentePai;
+export default ExemploCinco;

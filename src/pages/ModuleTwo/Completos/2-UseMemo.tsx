@@ -17,7 +17,7 @@ const usuarios: IUsuario[] = [
   // ... mais 1000 usuários
 ];
 
-function Usuarios() {
+function ExemploDois() {
   // useMemo utilizado para memorizar o resultado da filtragem dos usuários ativos,
   // o que poderia levar um tempo considerável em um cenário com muitos usuários
   const usuariosAtivos = useMemo(() => {
@@ -46,4 +46,4 @@ function Usuarios() {
   )
 }
 
-export default Usuarios;
+export default ExemploDois;

@@ -3,16 +3,16 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Home from "@/pages/Home";
 import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
-import ModuleTwoExampleOne from '@/pages/ModuleTwo/Exemplos/ExemploUm';
-import ModuleTwoExampleTwo from '@/pages/ModuleTwo/Exemplos/ExemploDois';
-import ModuleTwoExampleThree from '@/pages/ModuleTwo/Exemplos/ExemploTres';
-import ModuleTwoExampleFour from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
-import ModuleTwoExampleFive from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
-import ModuleTwoExampleOneCompleted from '@/pages/ModuleTwo/Completos/1-UseCallback';
-import ModuleTwoExampleTwoCompleted from '@/pages/ModuleTwo/Completos/2-UseMemo';
-import ModuleTwoExampleThreeCompleted from '@/pages/ModuleTwo/Completos/3-UseDeferredValue';
-import ModuleTwoExampleFourCompleted from '@/pages/ModuleTwo/Completos/4-UseTransition';
-import ModuleTwoExampleFiveCompleted from '@/pages/ModuleTwo/Completos/5-forwardRefAndUseImperativeHandle';
+import ModuloDoisExemploUm from '@/pages/ModuleTwo/Exemplos/ExemploUm';
+import ModuloDoisExemploDois from '@/pages/ModuleTwo/Exemplos/ExemploDois';
+import ModuloDoisExemploTres from '@/pages/ModuleTwo/Exemplos/ExemploTres';
+import ModuloDoisExemploQuatro from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
+import ModuloDoisExemploCinco from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
+import ModuloDoisExemploUmCompleto from '@/pages/ModuleTwo/Completos/1-UseCallback';
+import ModuloDoisExemploDoisCompleto from '@/pages/ModuleTwo/Completos/2-UseMemo';
+import ModuloDoisExemploTresCompleto from '@/pages/ModuleTwo/Completos/3-UseDeferredValue';
+import ModuloDoisExemploQuatroCompleto from '@/pages/ModuleTwo/Completos/4-UseTransition';
+import ModuloDoisExemploCincoCompleto from '@/pages/ModuleTwo/Completos/5-forwardRefAndUseImperativeHandle';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
@@ -38,43 +38,43 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_TWO,
     },
     {
-      Page: ModuleTwoExampleOne,
+      Page: ModuloDoisExemploUm,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE,
     },
     {
-      Page: ModuleTwoExampleTwo,
+      Page: ModuloDoisExemploDois,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO,
     },
     {
-      Page: ModuleTwoExampleThree,
+      Page: ModuloDoisExemploTres,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE,
     },
     {
-      Page: ModuleTwoExampleFour,
+      Page: ModuloDoisExemploQuatro,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
     },
     {
-      Page: ModuleTwoExampleFive,
+      Page: ModuloDoisExemploCinco,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
     },
     {
-      Page: ModuleTwoExampleOneCompleted,
+      Page: ModuloDoisExemploUmCompleto,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE_COMPLETED,
     },
     {
-      Page: ModuleTwoExampleTwoCompleted,
+      Page: ModuloDoisExemploDoisCompleto,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO_COMPLETED,
     },
     {
-      Page: ModuleTwoExampleThreeCompleted,
+      Page: ModuloDoisExemploTresCompleto,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE_COMPLETED,
     },
     {
-      Page: ModuleTwoExampleFourCompleted,
+      Page: ModuloDoisExemploQuatroCompleto,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR_COMPLETED,
     },
     {
-      Page: ModuleTwoExampleFiveCompleted,
+      Page: ModuloDoisExemploCincoCompleto,
       path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE_COMPLETED,
     },
     {

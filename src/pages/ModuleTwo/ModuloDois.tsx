@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 
-const examples = [
+const exemplos = [
   { label: "useCallback", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE },
   { label: "useMemo", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO },
   { label: "useDeferredValue", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE },
@@ -10,7 +10,7 @@ const examples = [
   { label: "forwardRef e useImperativeHandle", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE },
 ];
 
-const completedExamples = [
+const exemplosCompletos = [
   { label: "useCallback", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE_COMPLETED },
   { label: "useMemo", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO_COMPLETED },
   { label: "useDeferredValue", route: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE_COMPLETED },
@@ -21,8 +21,8 @@ const completedExamples = [
 const ModuloDois = () => {
   const navigate = useNavigate();
 
-  const handleGoModulePages = (route: string) => {
-    navigate(route);
+  const lidarComIdaParaRotas = (rota: string) => {
+    navigate(rota);
   };
 
   return (
@@ -36,13 +36,13 @@ const ModuloDois = () => {
           para o exemplo desejado.
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
-          {examples.map((example) => (
+          {exemplos.map((exemplo) => (
             <Button
-              key={example.route}
-              onClick={() => handleGoModulePages(example.route)}
+              key={exemplo.route}
+              onClick={() => lidarComIdaParaRotas(exemplo.route)}
               className="cursor-pointer"
             >
-              {example.label}
+              {exemplo.label}
             </Button>
           ))}
         </div>
@@ -50,13 +50,13 @@ const ModuloDois = () => {
           Exemplo completo de cada hook.
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
-          {completedExamples.map((example) => (
+          {exemplosCompletos.map((exemplo) => (
             <Button
-              key={example.route}
-              onClick={() => handleGoModulePages(example.route)}
+              key={exemplo.route}
+              onClick={() => lidarComIdaParaRotas(exemplo.route)}
               className="cursor-pointer"
             >
-              {example.label}
+              {exemplo.label}
             </Button>
           ))}
         </div>
