@@ -8,7 +8,7 @@ const ModuloQuatro = () => {
   const exemplos = [
     { label: "Exemplo 1", rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE },
     { label: "Exemplo 2", rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO },
-    { label: "Exemplo 3", rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE },
+    { label: "Exemplo 3 (Adicional)", rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE },
   ];
 
   const exemplosCompletos = [
@@ -21,7 +21,7 @@ const ModuloQuatro = () => {
       rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO_COMPLETED,
     },
     {
-      label: "Exemplo 3",
+      label: "Exemplo 3 (Adicional)",
       rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE_COMPLETED,
     },
   ];
