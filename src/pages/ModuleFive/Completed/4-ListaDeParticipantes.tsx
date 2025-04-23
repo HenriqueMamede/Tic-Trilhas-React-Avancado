@@ -22,9 +22,10 @@ const schema = yup.object({
       yup.object({
         nome: yup
           .string()
+          .trim()
           .required("Nome é obrigatório")
           .min(3, "Nome muito pequeno")
-          .matches(/^[A-Za-z]+$/, "Nome deve conter apenas letras"),
+          .matches(/^[A-Za-z\s]+$/, "Nome deve conter apenas letras"),
       })
     )
     .required(),

@@ -9,16 +9,19 @@ import { Label } from "@/components/ui/label";
 const schema = yup.object({
   nome: yup
     .string()
-    .matches(/^[A-Za-z]+$/, "Nome deve conter apenas letras") // Validação para permitir apenas letras
+    .trim() // Remove espaços em branco no início e no final
+    .matches(/^[A-Za-z\s]+$/, "Nome deve conter apenas letras") // Validação para permitir apenas letras e espaços
     .min(3, "Nome muito pequeno")
     .required("Nome é obrigatório"), // Validação para campo obrigatório
   sobrenome: yup
     .string()
-    .matches(/^[A-Za-z]+$/, "Sobrenome deve conter apenas letras")
+    .trim()
+    .matches(/^[A-Za-z\s]+$/, "Sobrenome deve conter apenas letras")
     .min(3, "Sobrenome muito pequeno")
     .required("Sobrenome é obrigatório"),
   email: yup
     .string()
+    .trim()
     .email("E-mail inválido") // Validação para formato de e-mail
     .required("Email é obrigatório"),
   senha: yup
