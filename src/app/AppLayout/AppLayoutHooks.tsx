@@ -12,6 +12,8 @@ import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
 import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
 import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
+import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
+import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
 import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1-LoginYup.tsx";
 import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2-FormularioCadastro.tsx";
 import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
@@ -39,6 +41,14 @@ export function useAppRoutes() {
     {
       Page: ModuleFour,
       path: ApplicationRoutes.MODULE_FOUR,
+    },
+    {
+      Page: ModuloQuatroPrimeiroExemplo,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE,
+    },
+    {
+      Page: ModuloQuatroSegundoExemplo,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO,
     },
     {
       Page: ModuleFive,
