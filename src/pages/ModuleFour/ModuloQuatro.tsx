@@ -11,6 +11,21 @@ const ModuloQuatro = () => {
     { label: "Exemplo 3", rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE },
   ];
 
+  const exemplosCompletos = [
+    {
+      label: "Exemplo 1",
+      rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE_COMPLETED,
+    },
+    {
+      label: "Exemplo 2",
+      rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO_COMPLETED,
+    },
+    {
+      label: "Exemplo 3",
+      rota: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE_COMPLETED,
+    },
+  ];
+
   const lidarComIdaParaRotas = (rota: string) => {
     navigate(rota);
   };
@@ -26,7 +41,18 @@ const ModuloQuatro = () => {
           navegue para o exemplo desejado.
         </p>
         <div className="flex flex-col items-center gap-2 w-full">
+          <p>Exemplos iniciais do repositório</p>
           {exemplos.map((exemplo) => (
+            <Button
+              key={exemplo.rota}
+              onClick={() => lidarComIdaParaRotas(exemplo.rota)}
+              className="cursor-pointer"
+            >
+              {exemplo.label}
+            </Button>
+          ))}
+          <p>Exemplos completos</p>
+          {exemplosCompletos.map((exemplo) => (
             <Button
               key={exemplo.rota}
               onClick={() => lidarComIdaParaRotas(exemplo.rota)}

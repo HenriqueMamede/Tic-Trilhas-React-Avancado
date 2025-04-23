@@ -12,9 +12,12 @@ import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
 import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
 import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
-import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Completos/PrimeiroExemplo";
-import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Completos/SegundoExemplo";
-import ModuloQuatroTresExemplo from "@/pages/ModuleFour/Completos/TerceiroExemplo";
+import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
+import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
+import ModuloQuatroTresExemplo from "@/pages/ModuleFour/Exemplos/TerceiroExemplo";
+import ModuloQuatroPrimeiroExemploCompleto from "@/pages/ModuleFour/Completos/PrimeiroExemplo";
+import ModuloQuatroSegundoExemploCompleto from "@/pages/ModuleFour/Completos/SegundoExemplo";
+import ModuloQuatroTresExemploCompleto from "@/pages/ModuleFour/Completos/TerceiroExemplo";
 
 export function useAppRoutes() {
   const routes = [
@@ -49,6 +52,18 @@ export function useAppRoutes() {
     {
       Page: ModuloQuatroTresExemplo,
       path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE,
+    },
+    {
+      Page: ModuloQuatroPrimeiroExemploCompleto,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE_COMPLETED,
+    },
+    {
+      Page: ModuloQuatroSegundoExemploCompleto,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO_COMPLETED,
+    },
+    {
+      Page: ModuloQuatroTresExemploCompleto,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_THREE_COMPLETED,
     },
     {
       Page: ModuleFive,
