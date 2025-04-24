@@ -3,6 +3,11 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Home from "@/pages/Home";
 import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
+import ModuloDoisExemploUm from '@/pages/ModuleTwo/Exemplos/ExemploUm';
+import ModuloDoisExemploDois from '@/pages/ModuleTwo/Exemplos/ExemploDois';
+import ModuloDoisExemploTres from '@/pages/ModuleTwo/Exemplos/ExemploTres';
+import ModuloDoisExemploQuatro from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
+import ModuloDoisExemploCinco from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
 import ModuleThree from "@/pages/ModuleThree";
 import ModuloTresExemploUm from "@/pages/ModuleThree/Exemplos/ExemploUm";
 import ModuloTresExemploDois from "@/pages/ModuleThree/Exemplos/ExemploDois";
@@ -16,6 +21,8 @@ import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
 import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
 import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
 import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
+import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
+import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
 
 export function useAppRoutes() {
   const routes = [
@@ -30,6 +37,26 @@ export function useAppRoutes() {
     {
       Page: ModuleTwo,
       path: ApplicationRoutes.MODULE_TWO,
+    },
+    {
+      Page: ModuloDoisExemploUm,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE,
+    },
+    {
+      Page: ModuloDoisExemploDois,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO,
+    },
+    {
+      Page: ModuloDoisExemploTres,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE,
+    },
+    {
+      Page: ModuloDoisExemploQuatro,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
+    },
+    {
+      Page: ModuloDoisExemploCinco,
+      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
     },
     {
       Page: ModuleThree,
@@ -54,6 +81,14 @@ export function useAppRoutes() {
     {
       Page: ModuleFour,
       path: ApplicationRoutes.MODULE_FOUR,
+    },
+    {
+      Page: ModuloQuatroPrimeiroExemplo,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE,
+    },
+    {
+      Page: ModuloQuatroSegundoExemplo,
+      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO,
     },
     {
       Page: ModuleFive,

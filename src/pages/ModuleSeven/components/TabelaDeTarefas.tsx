@@ -37,7 +37,10 @@ const TabelaDeTarefas = ({
       </TableHeader>
       <TableBody>
         {tarefas.map((tarefa) => (
-          <TableRow key={tarefa.id}>
+          <TableRow
+            key={tarefa.id}
+            className="even:bg-blue-100 hover:bg-blue-200"
+          >
             <TableCell data-testid="texto-tarefa">{tarefa.texto}</TableCell>
             <TableCell data-testid="status-tarefas">
               {tarefa.finalizada ? "Finalizada" : "Não finalizada"}
@@ -79,6 +82,6 @@ const TabelaDeTarefas = ({
       </TableBody>
     </Table>
   );
-}
+};
 
 export default TabelaDeTarefas;
