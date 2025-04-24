@@ -1,1 +1,1 @@
-export { default } from "./ModuleThree";
+export { default } from "./ModuloTres.tsx";

@@ -9,6 +9,10 @@ import ModuloDoisExemploTres from '@/pages/ModuleTwo/Exemplos/ExemploTres';
 import ModuloDoisExemploQuatro from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
 import ModuloDoisExemploCinco from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
 import ModuleThree from "@/pages/ModuleThree";
+import ModuloTresExemploUm from "@/pages/ModuleThree/Exemplos/ExemploUm";
+import ModuloTresExemploDois from "@/pages/ModuleThree/Exemplos/ExemploDois";
+import ModuloTresExemploTres from "@/pages/ModuleThree/Exemplos/ExemploTres";
+import ModuloTresExemploQuatro from "@/pages/ModuleThree/Exemplos/ExemploQuatro";
 import ModuleFour from "@/pages/ModuleFour";
 import ModuleFive from "@/pages/ModuleFive";
 import ModuleSix from "@/pages/ModuleSix";
@@ -57,6 +61,22 @@ export function useAppRoutes() {
     {
       Page: ModuleThree,
       path: ApplicationRoutes.MODULE_THREE,
+    },
+    {
+      Page: ModuloTresExemploUm,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_ONE,
+    },
+    {
+      Page: ModuloTresExemploDois,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_TWO,
+    },
+    {
+      Page: ModuloTresExemploTres,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_THREE,
+    },
+    {
+      Page: ModuloTresExemploQuatro,
+      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR,
     },
     {
       Page: ModuleFour,
