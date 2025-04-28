@@ -32,7 +32,7 @@ export const useGetLayoutNavigationItems = () => {
   };
 
   const moduleSeven = {
-    link: ApplicationRoutes.MODULE_SEVEN,
+    link: ApplicationRoutes.MODULO_SETE,
     label: "Módulo 7",
   };
 

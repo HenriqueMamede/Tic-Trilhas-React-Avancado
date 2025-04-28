@@ -21,5 +21,8 @@ export enum ApplicationRoutes {
   MODULE_FIVE_EXAMPLE_THREE = "/module-five/example-three",
   MODULE_FIVE_EXAMPLE_FOUR = "/module-five/example-four",
   MODULE_SIX = "/module-six",
-  MODULE_SEVEN = "/module-seven",
+  MODULO_SETE = "/modulo-sete",
+  MODULO_SETE_EXEMPLO_CYPRESS = "/modulo-sete/exemplo1-cypress",
+  MODULO_SETE_EXEMPLO1_TESTE_UNITARIO = "/modulo-sete/exemplo1-teste-unitario",
+  MODULO_SETE_EXEMPLO2_TESTE_UNITARIO = "/modulo-sete/exemplo2-teste-unitario",
 }
