@@ -1,5 +1,5 @@
 import { useController, Control } from "react-hook-form";
-import { IDadosFormulario } from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
+import { IDadosFormulario } from "@/pages/ModuleFive/Completos/3-LoginUserController.tsx";
 
 // Definição das props do componente com tipagem
 interface InputPersonalizadoProps {

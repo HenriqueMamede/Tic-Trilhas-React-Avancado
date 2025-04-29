@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "@/components/ui/button";
-import InputPersonalizado from "./InputPersonalizadoCompleto";
+import InputPersonalizado from "./components/InputPersonalizadoCompleto.tsx";
 
 export interface IDadosFormulario {
   inputPersonalizado: string;

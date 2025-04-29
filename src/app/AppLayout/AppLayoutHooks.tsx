@@ -5,20 +5,21 @@ import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
-import ModuleFive from "@/pages/ModuleFive";
+import ModuloCinco from "@/pages/ModuleFive";
+import ModuloCincoExemploUm from "@/pages/ModuleFive/Exemplos/ExemploUm";
+import ModuloCincoExemploDois from "@/pages/ModuleFive/Exemplos/ExemploDois";
+import ModuloCincoExemploTres from "@/pages/ModuleFive/Exemplos/ExemploTres";
+import ModuloCincoExemploQuatro from "@/pages/ModuleFive/Exemplos/ExemploQuatro";
+import ModuloCincoExemploUmCompleto from "@/pages/ModuleFive/Completos/1-LoginYup";
+import ModuloCincoExemploDoisCompleto from "@/pages/ModuleFive/Completos/2-FormularioCadastro";
+import ModuloCincoExemploTresCompleto from "@/pages/ModuleFive/Completos/3-LoginUserController";
+import ModuloCincoExemploQuatroCompleto from "@/pages/ModuleFive/Completos/4-ListaDeParticipantes";
+import ModuloCincoExamploUseFormContext from "@/pages/ModuleFive/Completos/5-UseFormContext-Pai";
 import ModuleSix from "@/pages/ModuleSix";
 import ModuleSeven from "@/pages/ModuleSeven";
-import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
-import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
-import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
-import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
 import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
 import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
-import ExampleOneCompleted from "@/pages/ModuleFive/Completed/1-LoginYup.tsx";
-import ExampleTwoCompleted from "@/pages/ModuleFive/Completed/2-FormularioCadastro.tsx";
-import ExampleThreeCompleted from "@/pages/ModuleFive/Completed/3-LoginUserController.tsx";
-import ExampleFourCompleted from "@/pages/ModuleFive/Completed/4-ListaDeParticipantes";
-import ExampleUseFormContext from "@/pages/ModuleFive/Completed/UseFormContext-Pai.tsx";
+
 
 export function useAppRoutes() {
   const routes = [
@@ -51,43 +52,43 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO,
     },
     {
-      Page: ModuleFive,
+      Page: ModuloCinco,
       path: ApplicationRoutes.MODULE_FIVE,
     },
     {
-      Page: ExampleOne,
+      Page: ModuloCincoExemploUm,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE,
     },
     {
-      Page: ExampleTwo,
+      Page: ModuloCincoExemploDois,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO,
     },
     {
-      Page: ExampleThree,
+      Page: ModuloCincoExemploTres,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE,
     },
     {
-      Page: ExampleFour,
+      Page: ModuloCincoExemploQuatro,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR,
     },
     {
-      Page: ExampleOneCompleted,
+      Page: ModuloCincoExemploUmCompleto,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE_COMPLETED,
     },
     {
-      Page: ExampleTwoCompleted,
+      Page: ModuloCincoExemploDoisCompleto,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO_COMPLETED,
     },
     {
-      Page: ExampleThreeCompleted,
+      Page: ModuloCincoExemploTresCompleto,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE_COMPLETED,
     },
     {
-      Page: ExampleFourCompleted,
+      Page: ModuloCincoExemploQuatroCompleto,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR_COMPLETED,
     },
     {
-      Page: ExampleUseFormContext,
+      Page: ModuloCincoExamploUseFormContext,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_USEFORMCONTEXT,
     },
     {

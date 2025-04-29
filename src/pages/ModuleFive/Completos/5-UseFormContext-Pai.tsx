@@ -1,6 +1,6 @@
 import { useForm, FormProvider } from 'react-hook-form';
-import InputEmail from './InputEmail';
-import InputSenha from './InputSenha';
+import InputEmail from './components/InputEmail.tsx';
+import InputSenha from './components/InputSenha.tsx';
 import {Button} from "@/components/ui/button.tsx";
 
 interface IDadosFormulario {
