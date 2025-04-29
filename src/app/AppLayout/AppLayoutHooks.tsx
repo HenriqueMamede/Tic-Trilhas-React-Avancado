@@ -1,7 +1,7 @@
 import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 
 import Home from "@/pages/Home";
-import ModuleOne from "@/pages/ModuleOne";
+import ModuleOne from "@/pages/ModuloUm";
 import ModuleTwo from "@/pages/ModuleTwo";
 import ModuleThree from "@/pages/ModuleThree";
 import ModuleFour from "@/pages/ModuleFour";
@@ -62,7 +62,7 @@ export function useAppRoutes() {
     {
       Page: ModuleSeven,
       path: ApplicationRoutes.MODULE_SEVEN,
-    },
+    }
   ];
 
   return routes;
