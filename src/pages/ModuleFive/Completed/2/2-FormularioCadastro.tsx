@@ -7,21 +7,24 @@ import { Label } from "@/components/ui/label";
 
 // Definição do esquema de validação usando Yup
 
-const somenteLetras = /^[A-Za-z]+$/; // Regex para permitir apenas letras
+const somenteLetras = /^[A-Za-z\s]+$/; // Regex para permitir apenas letras
 
 const schema = yup.object({
   nome: yup
     .string()
+    .trim()
     .matches(somenteLetras, "Nome deve conter apenas letras") // Validação para permitir apenas letras
     .min(3, "Nome muito pequeno")
     .required("Nome é obrigatório"), // Validação para campo obrigatório
   sobrenome: yup
     .string()
+    .trim()
     .matches(somenteLetras, "Sobrenome deve conter apenas letras")
     .min(3, "Sobrenome muito pequeno")
     .required("Sobrenome é obrigatório"),
   email: yup
     .string()
+    .trim()
     .email("E-mail inválido") // Validação para formato de e-mail
     .required("Email é obrigatório"),
   senha: yup
