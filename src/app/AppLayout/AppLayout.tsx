@@ -1,7 +1,5 @@
 import {
   createBrowserRouter,
-  createRoutesFromElements,
-  Route,
   RouterProvider,
 } from "react-router";
 
@@ -10,19 +8,21 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Layout from "./components/Layout/Layout";
 
 import { useAppRoutes } from "./AppLayoutHooks";
+import PaginaNaoEncontrada from "@/pages/PaginaNaoEncontrada";
 
 const AppLayout = () => {
   const appRoutes = useAppRoutes();
 
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path={ApplicationRoutes.HOME} element={<Layout />}>
-        {appRoutes.map(({ Page, path }) => (
-          <Route element={<Page />} path={path} key={path} />
-        ))}
-      </Route>
-    )
-  );
+  const router = createBrowserRouter([
+    ...appRoutes.map(({ Page, path }) => ({
+      path,
+      element: <Layout><Page /></Layout>,
+    })),
+    {
+      path: ApplicationRoutes.PAGINA_NAO_ENCONTRADA,
+      element: <PaginaNaoEncontrada />,
+    },
+  ]);
 
   return <RouterProvider router={router} />;
 };

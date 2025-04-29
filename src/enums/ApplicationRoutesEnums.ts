@@ -1,5 +1,6 @@
 export enum ApplicationRoutes {
   HOME = "/",
+  PAGINA_NAO_ENCONTRADA = "*",
   MODULE_ONE = "/module-one",
   MODULE_TWO = "/module-two",
   MODULE_THREE = "/module-three",
