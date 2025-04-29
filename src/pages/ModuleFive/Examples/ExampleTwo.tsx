@@ -17,7 +17,7 @@ function FormularioCadastro() {
             <Input
               id="nome"
             />
-            <p className="text-red-500 text-sm">error</p>
+            <p className="text-red-500 text-sm">mensagem de erro</p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -28,7 +28,7 @@ function FormularioCadastro() {
             <Input
               id="sobrenome"
             />
-            <p className="text-red-500 text-sm">error</p>
+            <p className="text-red-500 text-sm">mensagem de erro</p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -39,7 +39,7 @@ function FormularioCadastro() {
             <Input
               id="email"
             />
-            <p className="text-red-500 text-sm">error</p>
+            <p className="text-red-500 text-sm">mensagem de erro</p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -51,7 +51,7 @@ function FormularioCadastro() {
               id="senha"
               type="password"
             />
-            <p className="text-red-500 text-sm">error</p>
+            <p className="text-red-500 text-sm">mensagem de erro</p>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-[300px]">
@@ -63,7 +63,7 @@ function FormularioCadastro() {
               id="confirmar-senha"
               type="password"
             />
-            <p className="text-red-500 text-sm">error</p>
+            <p className="text-red-500 text-sm">mensagem de erro</p>
           </div>
         </div>
         <Button type="submit" className="w-50 cursor-pointer">

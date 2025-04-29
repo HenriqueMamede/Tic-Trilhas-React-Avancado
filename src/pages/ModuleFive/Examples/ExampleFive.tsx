@@ -19,7 +19,7 @@ function ListaDeParticipantes() {
           <div className='flex gap-4'>
             <div>
               <Input id="nome"/>
-              <p className='text-red-500 text-sm'>error</p>
+              <p className='text-red-500 text-sm'>mensagem de erro</p>
             </div>
             <Button type='button' variant="outline">
               Remover
