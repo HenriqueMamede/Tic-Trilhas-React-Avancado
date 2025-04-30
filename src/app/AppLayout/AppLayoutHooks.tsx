@@ -14,16 +14,16 @@ import ModuloTresExemploDois from "@/pages/ModuleThree/Exemplos/ExemploDois";
 import ModuloTresExemploTres from "@/pages/ModuleThree/Exemplos/ExemploTres";
 import ModuloTresExemploQuatro from "@/pages/ModuleThree/Exemplos/ExemploQuatro";
 import ModuleFour from "@/pages/ModuleFour";
-import ModuleFive from "@/pages/ModuleFive";
+import ModuloCinco from "@/pages/ModuleFive";
+import ModuloCincoExemploUm from "@/pages/ModuleFive/Exemplos/ExemploUm";
+import ModuloCincoExemploDois from "@/pages/ModuleFive/Exemplos/ExemploDois";
+import ModuloCincoExemploTres from "@/pages/ModuleFive/Exemplos/ExemploTres";
+import ModuloCincoExemploQuatro from "@/pages/ModuleFive/Exemplos/ExemploQuatro";
 import ModuleSix from "@/pages/ModuleSix";
 import Modulo7 from "@/pages/ModuleSeven";
 import Modulo7ExemploCypress from "@/pages/ModuleSeven/ExemplosCypress/Exemplo1";
 import Modulo7Exemplo1TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo1";
 import Modulo7Exemplo2TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo2";
-import ExampleOne from "@/pages/ModuleFive/Examples/ExampleOne";
-import ExampleTwo from "@/pages/ModuleFive/Examples/ExampleTwo.tsx";
-import ExampleThree from "@/pages/ModuleFive/Examples/ExampleThree.tsx";
-import ExampleFour from "@/pages/ModuleFive/Examples/ExampleFour.tsx";
 import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
 import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
 
@@ -94,23 +94,23 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO,
     },
     {
-      Page: ModuleFive,
+      Page: ModuloCinco,
       path: ApplicationRoutes.MODULE_FIVE,
     },
     {
-      Page: ExampleOne,
+      Page: ModuloCincoExemploUm,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE,
     },
     {
-      Page: ExampleTwo,
+      Page: ModuloCincoExemploDois,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO,
     },
     {
-      Page: ExampleThree,
+      Page: ModuloCincoExemploTres,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE,
     },
     {
-      Page: ExampleFour,
+      Page: ModuloCincoExemploQuatro,
       path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR,
     },
     {
