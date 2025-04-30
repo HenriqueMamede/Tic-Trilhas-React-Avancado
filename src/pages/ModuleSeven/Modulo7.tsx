@@ -37,7 +37,7 @@ function Modulo7() {
         <div className="flex flex-row items-baseline justify-between w-full gap-15">
           <div className="flex flex-col w-full gap-2">
             <p className="text-md font-medium text-blue-500">
-              Exemplos dos testes unitários
+              Exemplos dos Testes unitários
             </p>
             {exemploDosTestesUnitarios.map((exemplo) => (
               <Button
@@ -51,7 +51,7 @@ function Modulo7() {
           </div>
           <div className="flex flex-col w-full gap-2">
             <p className="text-md font-medium text-blue-500">
-              Exemplos do cypress
+              Exemplos do Cypress
             </p>
             {exemploDoCypress.map((exemplo) => (
               <Button

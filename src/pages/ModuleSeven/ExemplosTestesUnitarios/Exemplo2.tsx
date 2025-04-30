@@ -48,7 +48,7 @@ function ListaInterativa({ itensIniciais = [] }: ListaInterativaProps) {
         }`}
       >
         {itens.map((item, index) => (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" key={`${item}-${index}`}>
             <li key={index} className=" text-lg font-light text-neutral-800">
               {item}
             </li>
