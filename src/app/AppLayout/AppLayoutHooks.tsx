@@ -3,11 +3,11 @@ import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
 import Home from "@/pages/Home";
 import ModuleOne from "@/pages/ModuleOne";
 import ModuleTwo from "@/pages/ModuleTwo";
-import ModuloDoisExemploUm from '@/pages/ModuleTwo/Exemplos/ExemploUm';
-import ModuloDoisExemploDois from '@/pages/ModuleTwo/Exemplos/ExemploDois';
-import ModuloDoisExemploTres from '@/pages/ModuleTwo/Exemplos/ExemploTres';
-import ModuloDoisExemploQuatro from '@/pages/ModuleTwo/Exemplos/ExemploQuatro';
-import ModuloDoisExemploCinco from '@/pages/ModuleTwo/Exemplos/ExemploCinco';
+import ModuloDoisExemploUm from "@/pages/ModuleTwo/Exemplos/ExemploUm";
+import ModuloDoisExemploDois from "@/pages/ModuleTwo/Exemplos/ExemploDois";
+import ModuloDoisExemploTres from "@/pages/ModuleTwo/Exemplos/ExemploTres";
+import ModuloDoisExemploQuatro from "@/pages/ModuleTwo/Exemplos/ExemploQuatro";
+import ModuloDoisExemploCinco from "@/pages/ModuleTwo/Exemplos/ExemploCinco";
 import ModuleThree from "@/pages/ModuleThree";
 import ModuloTresExemploUm from "@/pages/ModuleThree/Exemplos/ExemploUm";
 import ModuloTresExemploDois from "@/pages/ModuleThree/Exemplos/ExemploDois";
@@ -20,7 +20,10 @@ import ModuloCincoExemploDois from "@/pages/ModuleFive/Exemplos/ExemploDois";
 import ModuloCincoExemploTres from "@/pages/ModuleFive/Exemplos/ExemploTres";
 import ModuloCincoExemploQuatro from "@/pages/ModuleFive/Exemplos/ExemploQuatro";
 import ModuleSix from "@/pages/ModuleSix";
-import ModuleSeven from "@/pages/ModuleSeven";
+import Modulo7 from "@/pages/ModuleSeven";
+import Modulo7ExemploCypress from "@/pages/ModuleSeven/ExemplosCypress/Exemplo1";
+import Modulo7Exemplo1TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo1";
+import Modulo7Exemplo2TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo2";
 import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
 import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
 
@@ -115,8 +118,20 @@ export function useAppRoutes() {
       path: ApplicationRoutes.MODULE_SIX,
     },
     {
-      Page: ModuleSeven,
-      path: ApplicationRoutes.MODULE_SEVEN,
+      Page: Modulo7,
+      path: ApplicationRoutes.MODULO_SETE,
+    },
+    {
+      Page: Modulo7ExemploCypress,
+      path: ApplicationRoutes.MODULO_SETE_EXEMPLO_CYPRESS,
+    },
+    {
+      Page: Modulo7Exemplo1TestesUnitarios,
+      path: ApplicationRoutes.MODULO_SETE_EXEMPLO1_TESTE_UNITARIO,
+    },
+    {
+      Page: Modulo7Exemplo2TestesUnitarios,
+      path: ApplicationRoutes.MODULO_SETE_EXEMPLO2_TESTE_UNITARIO,
     },
   ];
 

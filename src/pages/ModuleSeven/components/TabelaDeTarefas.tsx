@@ -6,7 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { MdDelete } from "react-icons/md";
+import { RiDeleteBinLine } from "react-icons/ri";
 import { FaCheckCircle } from "react-icons/fa";
 import { ImRadioUnchecked } from "react-icons/im";
 import { Button } from "@/components/ui/button";
@@ -54,7 +54,7 @@ const TabelaDeTarefas = ({
                   data-testid="remover-tarefa"
                   onClick={() => removerTarefa(tarefa.id)}
                 >
-                  <MdDelete className="text-red-700" />
+                  <RiDeleteBinLine className="text-red-700" />
                 </Button>
                 <Button
                   size="sm"
