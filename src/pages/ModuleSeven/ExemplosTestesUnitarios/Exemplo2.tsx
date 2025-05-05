@@ -1,4 +1,3 @@
-// src/componentes/ListaInterativa.tsx???
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -8,7 +7,7 @@ interface ListaInterativaProps {
   itensIniciais?: string[];
 }
 
-function ListaInterativa({ itensIniciais = [] }: ListaInterativaProps) {
+function Exemplo2({ itensIniciais = [] }: ListaInterativaProps) {
   const [itens, setItens] = useState<string[]>(itensIniciais);
   const [novoItem, setNovoItem] = useState("");
 
@@ -68,4 +67,4 @@ function ListaInterativa({ itensIniciais = [] }: ListaInterativaProps) {
   );
 }
 
-export default ListaInterativa;
+export default Exemplo2;
