@@ -1,14 +1,13 @@
-// src/componentes/ListaInterativa.tsx???
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { RiDeleteBinLine } from "react-icons/ri";
 
-interface ListaInterativaProps {
+interface Exemplo2Props {
   itensIniciais?: string[];
 }
 
-function ListaInterativa({ itensIniciais = [] }: ListaInterativaProps) {
+function Exemplo2({ itensIniciais = [] }: Exemplo2Props) {
   const [itens, setItens] = useState<string[]>(itensIniciais);
   const [novoItem, setNovoItem] = useState("");
 
@@ -68,4 +67,4 @@ function ListaInterativa({ itensIniciais = [] }: ListaInterativaProps) {
   );
 }
 
-export default ListaInterativa;
+export default Exemplo2;

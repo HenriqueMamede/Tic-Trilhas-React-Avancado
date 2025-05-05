@@ -1,13 +1,16 @@
 import { Button } from "@/components/ui/button";
 
-// src/componentes/Botao.tsx?
 interface BotaoProps {
   nome?: string;
   desabilitado?: boolean;
   aoClicar?: () => void;
 }
 
-function Botao({ nome = "Botão customizado", aoClicar, desabilitado = false }: BotaoProps) {
+function Exemplo1({
+  nome = "Botão customizado",
+  aoClicar,
+  desabilitado = false,
+}: BotaoProps) {
   return (
     <div className="flex items-center justify-center h-screen">
       <Button
@@ -22,4 +25,4 @@ function Botao({ nome = "Botão customizado", aoClicar, desabilitado = false }: 
   );
 }
 
-export default Botao;
+export default Exemplo1;
