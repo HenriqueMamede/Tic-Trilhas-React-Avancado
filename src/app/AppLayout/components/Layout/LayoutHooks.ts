@@ -1,38 +1,38 @@
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
 export const useGetLayoutNavigationItems = () => {
   const moduleOne = {
-    link: ApplicationRoutes.MODULE_ONE,
+    link: RotasAplicacao.MODULE_ONE,
     label: "Módulo 1",
   };
 
   const moduleTwo = {
-    link: ApplicationRoutes.MODULE_TWO,
+    link: RotasAplicacao.MODULE_TWO,
     label: "Módulo 2",
   };
 
   const moduleThree = {
-    link: ApplicationRoutes.MODULE_THREE,
+    link: RotasAplicacao.MODULE_THREE,
     label: "Módulo 3",
   };
 
   const moduleFour = {
-    link: ApplicationRoutes.MODULE_FOUR,
+    link: RotasAplicacao.MODULE_FOUR,
     label: "Módulo 4",
   };
 
   const moduleFive = {
-    link: ApplicationRoutes.MODULE_FIVE,
+    link: RotasAplicacao.MODULE_FIVE,
     label: "Módulo 5",
   };
 
   const moduleSix = {
-    link: ApplicationRoutes.MODULE_SIX,
+    link: RotasAplicacao.MODULE_SIX,
     label: "Módulo 6",
   };
 
   const moduleSeven = {
-    link: ApplicationRoutes.MODULE_SEVEN,
+    link: RotasAplicacao.MODULE_SEVEN,
     label: "Módulo 7",
   };
 

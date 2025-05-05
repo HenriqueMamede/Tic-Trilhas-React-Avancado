@@ -4,7 +4,7 @@ import { Tarefas } from "@/types";
 import { Filtro } from "@/components";
 import { AdicionarTarefasForm,  TabelaDeTarefas } from "./components";
 
-const ModuleSeven = () => {
+const ModuloSete = () => {
   const [dados, setDados] = useState<Tarefas[]>([]);
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
 
@@ -42,4 +42,4 @@ const ModuleSeven = () => {
   );
 }
 
-export default ModuleSeven;
+export default ModuloSete;

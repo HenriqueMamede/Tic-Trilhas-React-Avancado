@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import DetalhesUsuario from "@/pages/ModuleThree/components/DetalhesUsuario.tsx";
+import DetalhesUsuario from "@/pages/Modulo3/components/DetalhesUsuario";
 
 const queryClient = new QueryClient();
 

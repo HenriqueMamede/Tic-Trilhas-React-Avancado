@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
 import { useEffect, useState } from "react";
 
-const PrimeiroExemplo = () => {
+const ExemploUm = () => {
   const [dadosDoFomulario, setDadosDoFomulario] = useState({
     nome: "",
     email: "",
@@ -62,4 +62,4 @@ const PrimeiroExemplo = () => {
   );
 }
 
-export default PrimeiroExemplo;
+export default ExemploUm;

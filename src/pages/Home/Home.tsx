@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
 
-  const handleGoModulePages = () => {
-    navigate(ApplicationRoutes.MODULE_ONE);
+  const lidarComIdaParaModulos = () => {
+    navigate(RotasAplicacao.MODULE_ONE);
   };
 
   return (
@@ -24,7 +24,7 @@ const Home = () => {
           Prepare-se para aprender novos conceitos e técnicas avançadas. Vamos
           juntos nessa jornada!
         </p>
-        <Button onClick={handleGoModulePages} className="cursor-pointer">
+        <Button onClick={lidarComIdaParaModulos} className="cursor-pointer">
           Navegar para os Módulos
         </Button>
       </div>

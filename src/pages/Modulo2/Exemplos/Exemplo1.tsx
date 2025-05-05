@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
-import BotaoReset from "@/pages/ModuleTwo/Exemplos/components/BotaoReset.tsx";
+import BotaoReset from "@/pages/Modulo2/Exemplos/components/BotaoReset.tsx";
 
 function ExemploUm() {
   // Estado para armazenar o contador

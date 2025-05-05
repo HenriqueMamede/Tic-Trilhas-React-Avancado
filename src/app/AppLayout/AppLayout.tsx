@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router";
 
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
 import Layout from "./components/Layout/Layout";
 
@@ -16,9 +16,9 @@ const AppLayout = () => {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path={ApplicationRoutes.HOME} element={<Layout />}>
-        {appRoutes.map(({ Page, path }) => (
-          <Route element={<Page />} path={path} key={path} />
+      <Route path={RotasAplicacao.HOME} element={<Layout />}>
+        {appRoutes.map(({ Pagina, caminho }) => (
+          <Route element={<Pagina />} path={caminho} key={caminho} />
         ))}
       </Route>
     )

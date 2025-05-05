@@ -1,4 +1,4 @@
-import ComponenteDemorado from "@/pages/ModuleThree/components/ComponenteDemorado.tsx";
+import ComponenteDemorado from "@/pages/Modulo3/components/ComponenteDemorado";
 
 function ExemploUm() {
   return (

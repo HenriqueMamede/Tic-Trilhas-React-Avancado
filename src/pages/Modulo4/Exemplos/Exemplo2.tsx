@@ -18,7 +18,7 @@ const tarefas = [
   { id: 4, texto: "Lavar roupa", finalizada: true },
 ];
 
-const SegundoExemplo = () => {
+const ExemploDois = () => {
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
   const [tarefasFiltradas, setTarefasFiltradas] = useState<Tarefas[]>([]);
 
@@ -61,4 +61,4 @@ const SegundoExemplo = () => {
   );
 }
 
-export default SegundoExemplo;
+export default ExemploDois;

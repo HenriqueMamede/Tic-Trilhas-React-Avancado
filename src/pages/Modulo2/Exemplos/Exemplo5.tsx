@@ -1,4 +1,4 @@
-import InputCustomizado from "@/pages/ModuleTwo/Exemplos/components/InputCustomizado.tsx";
+import InputCustomizado from "@/pages/Modulo2/Exemplos/components/InputCustomizado.tsx";
 import { Button } from "@/components/ui/button.tsx";
 
 function ExemploCinco() {
