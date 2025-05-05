@@ -53,11 +53,12 @@ function Modulo7() {
             <p className="text-md font-medium text-blue-500">
               Exemplos do Cypress
             </p>
-            {exemploDoCypress.map((exemplo) => (
+            {exemploDoCypress.map((exemplo, index) => (
               <Button
                 key={exemplo.rota}
                 onClick={() => lidarComIdaParaRotas(exemplo.rota)}
                 className="cursor-pointer"
+                data-testid={`exemplo-cypress-${index}`}
               >
                 {exemplo.label}
               </Button>
