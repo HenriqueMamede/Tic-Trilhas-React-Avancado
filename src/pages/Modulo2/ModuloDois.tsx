@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
 const exemplos = [
-  { label: "useCallback", rota: RotasAplicacao.MODULE_TWO_EXAMPLE_ONE },
-  { label: "useMemo", rota: RotasAplicacao.MODULE_TWO_EXAMPLE_TWO },
-  { label: "useDeferredValue", rota: RotasAplicacao.MODULE_TWO_EXAMPLE_THREE },
-  { label: "useTransition", rota: RotasAplicacao.MODULE_TWO_EXAMPLE_FOUR },
-  { label: "forwardRef e useImperativeHandle", rota: RotasAplicacao.MODULE_TWO_EXAMPLE_FIVE },
+  { label: "useCallback", rota: RotasAplicacao.MODULO_DOIS_EXEMPLO_UM },
+  { label: "useMemo", rota: RotasAplicacao.MODULO_DOIS_EXEMPLO_DOIS },
+  { label: "useDeferredValue", rota: RotasAplicacao.MODULO_DOIS_EXEMPLO_TRES },
+  { label: "useTransition", rota: RotasAplicacao.MODULO_DOIS_EXEMPLO_QUATRO },
+  { label: "forwardRef e useImperativeHandle", rota: RotasAplicacao.MODULO_DOIS_EXEMPLO_CINCO },
 ];
 
 const ModuloDois = () => {

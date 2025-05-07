@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const lidarComIdaParaModulos = () => {
-    navigate(RotasAplicacao.MODULE_ONE);
+    navigate(RotasAplicacao.MODULO_UM);
   };
 
   return (
