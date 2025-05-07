@@ -1,139 +1,140 @@
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
 import Home from "@/pages/Home";
-import ModuleOne from "@/pages/ModuleOne";
-import ModuleTwo from "@/pages/ModuleTwo";
-import ModuloDoisExemploUm from "@/pages/ModuleTwo/Exemplos/ExemploUm";
-import ModuloDoisExemploDois from "@/pages/ModuleTwo/Exemplos/ExemploDois";
-import ModuloDoisExemploTres from "@/pages/ModuleTwo/Exemplos/ExemploTres";
-import ModuloDoisExemploQuatro from "@/pages/ModuleTwo/Exemplos/ExemploQuatro";
-import ModuloDoisExemploCinco from "@/pages/ModuleTwo/Exemplos/ExemploCinco";
-import ModuleThree from "@/pages/ModuleThree";
-import ModuloTresExemploUm from "@/pages/ModuleThree/Exemplos/ExemploUm";
-import ModuloTresExemploDois from "@/pages/ModuleThree/Exemplos/ExemploDois";
-import ModuloTresExemploTres from "@/pages/ModuleThree/Exemplos/ExemploTres";
-import ModuloTresExemploQuatro from "@/pages/ModuleThree/Exemplos/ExemploQuatro";
-import ModuleFour from "@/pages/ModuleFour";
-import ModuloCinco from "@/pages/ModuleFive";
-import ModuloCincoExemploUm from "@/pages/ModuleFive/Exemplos/ExemploUm";
-import ModuloCincoExemploDois from "@/pages/ModuleFive/Exemplos/ExemploDois";
-import ModuloCincoExemploTres from "@/pages/ModuleFive/Exemplos/ExemploTres";
-import ModuloCincoExemploQuatro from "@/pages/ModuleFive/Exemplos/ExemploQuatro";
-import ModuleSix from "@/pages/ModuleSix";
-import Modulo7 from "@/pages/ModuleSeven";
-import Modulo7ExemploCypress from "@/pages/ModuleSeven/ExemplosCypress/Exemplo1";
-import Modulo7Exemplo1TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo1";
-import Modulo7Exemplo2TestesUnitarios from "@/pages/ModuleSeven/ExemplosTestesUnitarios/Exemplo2";
-import ModuloQuatroPrimeiroExemplo from "@/pages/ModuleFour/Exemplos/PrimeiroExemplo";
-import ModuloQuatroSegundoExemplo from "@/pages/ModuleFour/Exemplos/SegundoExemplo";
+import ModuloUm from "@/pages/Modulo1";
+import ModuloDois from "@/pages/Modulo2";
+import ModuloDoisExemploUm from '@/pages/Modulo2/Exemplos/Exemplo1';
+import ModuloDoisExemploDois from '@/pages/Modulo2/Exemplos/Exemplo2';
+import ModuloDoisExemploTres from '@/pages/Modulo2/Exemplos/Exemplo3';
+import ModuloDoisExemploQuatro from '@/pages/Modulo2/Exemplos/Exemplo4';
+import ModuloDoisExemploCinco from '@/pages/Modulo2/Exemplos/Exemplo5';
+import ModuloTres from "@/pages/Modulo3";
+import ModuloTresExemploUm from "@/pages/Modulo3/Exemplos/Exemplo1";
+import ModuloTresExemploDois from "@/pages/Modulo3/Exemplos/Exemplo2";
+import ModuloTresExemploTres from "@/pages/Modulo3/Exemplos/Exemplo3";
+import ModuloTresExemploQuatro from "@/pages/Modulo3/Exemplos/Exemplo4";
+import ModuloQuatro from "@/pages/Modulo4";
+import ModuloQuatroExemploUm from "@/pages/Modulo4/Exemplos/Exemplo1";
+import ModuloQuatroExemploDois from "@/pages/Modulo4/Exemplos/Exemplo2";
+import ModuloCinco from "@/pages/Modulo5";
+import ModuloCincoExemploUm from "@/pages/Modulo5/Exemplos/Exemplo1";
+import ModuloCincoExemploDois from "@/pages/Modulo5/Exemplos/Exemplo2";
+import ModuloCincoExemploTres from "@/pages/Modulo5/Exemplos/Exemplo3";
+import ModuloCincoExemploQuatro from "@/pages/Modulo5/Exemplos/Exemplo4";
+import ModuloSeis from "@/pages/Modulo6";
+import ModuloSete from "@/pages/Modulo7";
+import ModuloSeteExemploCypress from "@/pages/Modulo7/ExemplosCypress/Exemplo1";
+import ModuloSeteExemploUmTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo1";
+import ModuloSeteExemploDoisTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo2";
+
 
 export function useAppRoutes() {
-  const routes = [
+  const rotas = [
     {
-      Page: Home,
-      path: ApplicationRoutes.HOME,
+      Pagina: Home,
+      caminho: RotasAplicacao.HOME,
     },
     {
-      Page: ModuleOne,
-      path: ApplicationRoutes.MODULE_ONE,
+      Pagina: ModuloUm,
+      caminho: RotasAplicacao.MODULO_UM,
     },
     {
-      Page: ModuleTwo,
-      path: ApplicationRoutes.MODULE_TWO,
+      Pagina: ModuloDois,
+      caminho: RotasAplicacao.MODULO_DOIS,
     },
     {
-      Page: ModuloDoisExemploUm,
-      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_ONE,
+      Pagina: ModuloDoisExemploUm,
+      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_UM,
     },
     {
-      Page: ModuloDoisExemploDois,
-      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_TWO,
+      Pagina: ModuloDoisExemploDois,
+      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_DOIS,
     },
     {
-      Page: ModuloDoisExemploTres,
-      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_THREE,
+      Pagina: ModuloDoisExemploTres,
+      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_TRES,
     },
     {
-      Page: ModuloDoisExemploQuatro,
-      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FOUR,
+      Pagina: ModuloDoisExemploQuatro,
+      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_QUATRO,
     },
     {
-      Page: ModuloDoisExemploCinco,
-      path: ApplicationRoutes.MODULE_TWO_EXAMPLE_FIVE,
+      Pagina: ModuloDoisExemploCinco,
+      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_CINCO,
     },
     {
-      Page: ModuleThree,
-      path: ApplicationRoutes.MODULE_THREE,
+      Pagina: ModuloTres,
+      caminho: RotasAplicacao.MODULO_TRES,
     },
     {
-      Page: ModuloTresExemploUm,
-      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_ONE,
+      Pagina: ModuloTresExemploUm,
+      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_UM,
     },
     {
-      Page: ModuloTresExemploDois,
-      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_TWO,
+      Pagina: ModuloTresExemploDois,
+      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_DOIS,
     },
     {
-      Page: ModuloTresExemploTres,
-      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_THREE,
+      Pagina: ModuloTresExemploTres,
+      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_TRES,
     },
     {
-      Page: ModuloTresExemploQuatro,
-      path: ApplicationRoutes.MODULE_THREE_EXAMPLE_FOUR,
+      Pagina: ModuloTresExemploQuatro,
+      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_QUATRO,
     },
     {
-      Page: ModuleFour,
-      path: ApplicationRoutes.MODULE_FOUR,
+      Pagina: ModuloQuatro,
+      caminho: RotasAplicacao.MODULO_QUATRO,
     },
     {
-      Page: ModuloQuatroPrimeiroExemplo,
-      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_ONE,
+      Pagina: ModuloQuatroExemploUm,
+      caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_UM,
     },
     {
-      Page: ModuloQuatroSegundoExemplo,
-      path: ApplicationRoutes.MODULE_FOUR_EXAMPLE_TWO,
+      Pagina: ModuloQuatroExemploDois,
+      caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_DOIS,
     },
     {
-      Page: ModuloCinco,
-      path: ApplicationRoutes.MODULE_FIVE,
+      Pagina: ModuloCinco,
+      caminho: RotasAplicacao.MODULO_CINCO,
     },
     {
-      Page: ModuloCincoExemploUm,
-      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_ONE,
+      Pagina: ModuloCincoExemploUm,
+      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_UM,
     },
     {
-      Page: ModuloCincoExemploDois,
-      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_TWO,
+      Pagina: ModuloCincoExemploDois,
+      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_DOIS,
     },
     {
-      Page: ModuloCincoExemploTres,
-      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_THREE,
+      Pagina: ModuloCincoExemploTres,
+      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_TRES,
     },
     {
-      Page: ModuloCincoExemploQuatro,
-      path: ApplicationRoutes.MODULE_FIVE_EXAMPLE_FOUR,
+      Pagina: ModuloCincoExemploQuatro,
+      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_QUATRO,
     },
     {
-      Page: ModuleSix,
-      path: ApplicationRoutes.MODULE_SIX,
+      Pagina: ModuloSeis,
+      caminho: RotasAplicacao.MODULO_SEIS,
     },
     {
-      Page: Modulo7,
-      path: ApplicationRoutes.MODULO_SETE,
+      Pagina: ModuloSete,
+      caminho: RotasAplicacao.MODULO_SETE,
     },
     {
-      Page: Modulo7ExemploCypress,
-      path: ApplicationRoutes.MODULO_SETE_EXEMPLO_CYPRESS,
+      Pagina: ModuloSeteExemploCypress,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_CYPRESS,
     },
     {
-      Page: Modulo7Exemplo1TestesUnitarios,
-      path: ApplicationRoutes.MODULO_SETE_EXEMPLO1_TESTE_UNITARIO,
+      Pagina: ModuloSeteExemploUmTestesUnitarios,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM_TESTE_UNITARIO,
     },
     {
-      Page: Modulo7Exemplo2TestesUnitarios,
-      path: ApplicationRoutes.MODULO_SETE_EXEMPLO2_TESTE_UNITARIO,
+      Pagina: ModuloSeteExemploDoisTestesUnitarios,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS_TESTE_UNITARIO,
     },
   ];
 
-  return routes;
+  return rotas;
 }
