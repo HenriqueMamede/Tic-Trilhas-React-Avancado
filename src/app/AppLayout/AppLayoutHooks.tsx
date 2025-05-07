@@ -17,12 +17,15 @@ import ModuloQuatro from "@/pages/Modulo4";
 import ModuloQuatroExemploUm from "@/pages/Modulo4/Exemplos/Exemplo1";
 import ModuloQuatroExemploDois from "@/pages/Modulo4/Exemplos/Exemplo2";
 import ModuloCinco from "@/pages/Modulo5";
-import ModuloCincoExemploUm from "@/pages/Modulo5/Examples/Exemplo1";
-import ModuloCincoExemploDois from "@/pages/Modulo5/Examples/Exemplo2";
-import ModuloCincoExemploTres from "@/pages/Modulo5/Examples/Exemplo3";
-import ModuloCincoExemploQuatro from "@/pages/Modulo5/Examples/Exemplo4";
+import ModuloCincoExemploUm from "@/pages/Modulo5/Exemplos/Exemplo1";
+import ModuloCincoExemploDois from "@/pages/Modulo5/Exemplos/Exemplo2";
+import ModuloCincoExemploTres from "@/pages/Modulo5/Exemplos/Exemplo3";
+import ModuloCincoExemploQuatro from "@/pages/Modulo5/Exemplos/Exemplo4";
 import ModuloSeis from "@/pages/Modulo6";
 import ModuloSete from "@/pages/Modulo7";
+import ModuloSeteExemploCypress from "@/pages/Modulo7/ExemplosCypress/Exemplo1";
+import ModuloSeteExemploUmTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo1";
+import ModuloSeteExemploDoisTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo2";
 
 
 export function useAppRoutes() {
@@ -118,6 +121,18 @@ export function useAppRoutes() {
     {
       Pagina: ModuloSete,
       caminho: RotasAplicacao.MODULO_SETE,
+    },
+    {
+      Pagina: ModuloSeteExemploCypress,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_CYPRESS,
+    },
+    {
+      Pagina: ModuloSeteExemploUmTestesUnitarios,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM_TESTE_UNITARIO,
+    },
+    {
+      Pagina: ModuloSeteExemploDoisTestesUnitarios,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS_TESTE_UNITARIO,
     },
   ];
 

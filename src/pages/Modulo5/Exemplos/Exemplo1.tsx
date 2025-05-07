@@ -14,14 +14,14 @@ function Login() {
             <Label htmlFor="email">Email <span className="text-red-500">*</span></Label>
             <div>
               <Input id="email"/>
-              <p className="text-red-500 text-sm">error</p>
+              <p className="text-red-500 text-sm">mensagem de erro</p>
             </div>
           </div>
           <div className="flex flex-col gap-2 w-[300px]">
             <Label htmlFor="senha">Senha <span className="text-red-500">*</span></Label>
             <div>
               <Input id="senha" type="password"/>
-              <p className="text-red-500 text-sm">error</p>
+              <p className="text-red-500 text-sm">mensagem de erro</p>
             </div>
           </div>
           <div className="flex gap-2 w-full max-w-[300px]">
