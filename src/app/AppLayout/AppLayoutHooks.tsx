@@ -22,6 +22,7 @@ import ModuloCincoExemploDois from "@/pages/Modulo5/Exemplos/Exemplo2";
 import ModuloCincoExemploTres from "@/pages/Modulo5/Exemplos/Exemplo3";
 import ModuloCincoExemploQuatro from "@/pages/Modulo5/Exemplos/Exemplo4";
 import ModuloSeis from "@/pages/Modulo6";
+import ModuloSeisExemploUm from "@/pages/Modulo6/Exemplos/Exemplo1";
 import ModuloSete from "@/pages/Modulo7";
 import ModuloSeteExemploCypress from "@/pages/Modulo7/ExemplosCypress/Exemplo1";
 import ModuloSeteExemploUmTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo1";
@@ -117,6 +118,10 @@ export function useAppRoutes() {
     {
       Pagina: ModuloSeis,
       caminho: RotasAplicacao.MODULO_SEIS,
+    },
+    {
+      Pagina: ModuloSeisExemploUm,
+      caminho: RotasAplicacao.MODULO_SEIS_EXEMPLO_UM,
     },
     {
       Pagina: ModuloSete,
