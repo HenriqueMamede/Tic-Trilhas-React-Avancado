@@ -7,7 +7,7 @@ function InputPersonalizado() {
       <input
         className="h-10 w-full p-2 rounded-md border border-gray-400"
       />
-      <p className="text-red-500 text-sm">error</p>
+      <p className="text-red-500 text-sm">mensagem de erro</p>
     </div>
   );
 }
