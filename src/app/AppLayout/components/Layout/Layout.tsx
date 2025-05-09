@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import {  useLocation } from "react-router";
 import { Skeleton } from "@/components/ui/skeleton";
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 import { LayoutProps } from "./Layout.types";
 
 const Header = lazy(() => import("./components/Header"));
@@ -9,7 +9,7 @@ const Header = lazy(() => import("./components/Header"));
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
 
-  const isHomePage = location.pathname === ApplicationRoutes.HOME;
+  const isHomePage = location.pathname === RotasAplicacao.HOME;
 
   return (
     <Suspense fallback={<Skeleton className="h-32 w-full rounded-lg" />}>

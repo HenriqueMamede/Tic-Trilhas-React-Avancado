@@ -3,7 +3,7 @@ import {
   RouterProvider,
 } from "react-router";
 
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
 import Layout from "./components/Layout/Layout";
 
@@ -14,12 +14,12 @@ const AppLayout = () => {
   const appRoutes = useAppRoutes();
 
   const router = createBrowserRouter([
-    ...appRoutes.map(({ Page, path }) => ({
-      path,
-      element: <Layout><Page /></Layout>,
+    ...appRoutes.map(({ Pagina, caminho }) => ({
+      caminho,
+      element: <Layout><Pagina /></Layout>,
     })),
     {
-      path: ApplicationRoutes.PAGINA_NAO_ENCONTRADA,
+      path: RotasAplicacao.PAGINA_NAO_ENCONTRADA,
       element: <PaginaNaoEncontrada />,
     },
   ]);

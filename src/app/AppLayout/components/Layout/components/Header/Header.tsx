@@ -6,7 +6,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { useGetLayoutNavigationItems } from "../../LayoutHooks";
-import { ApplicationRoutes } from "@/enums/ApplicationRoutesEnums";
+import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleGoHomePage = () => {
-    navigate(ApplicationRoutes.HOME);
+    navigate(RotasAplicacao.HOME);
   };
 
   return (
