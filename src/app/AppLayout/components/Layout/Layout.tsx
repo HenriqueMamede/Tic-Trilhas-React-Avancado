@@ -1,11 +1,12 @@
 import { lazy, Suspense } from "react";
-import { Outlet, useLocation } from "react-router";
+import {  useLocation } from "react-router";
 import { Skeleton } from "@/components/ui/skeleton";
 import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
+import { LayoutProps } from "./Layout.types";
 
 const Header = lazy(() => import("./components/Header"));
 
-function Layout() {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
 
   const isHomePage = location.pathname === RotasAplicacao.HOME;
@@ -18,7 +19,7 @@ function Layout() {
         className="relative h-full flex-1 overflow-hidden"
         id="main-content"
       >
-        <Outlet />
+        {children}
       </main>
     </Suspense>
   );
