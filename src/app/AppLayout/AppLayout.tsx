@@ -1,7 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 
 import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 
@@ -15,8 +12,12 @@ const AppLayout = () => {
 
   const router = createBrowserRouter([
     ...appRoutes.map(({ Pagina, caminho }) => ({
-      caminho,
-      element: <Layout><Pagina /></Layout>,
+      path: caminho,
+      element: (
+        <Layout>
+          <Pagina />
+        </Layout>
+      ),
     })),
     {
       path: RotasAplicacao.PAGINA_NAO_ENCONTRADA,
