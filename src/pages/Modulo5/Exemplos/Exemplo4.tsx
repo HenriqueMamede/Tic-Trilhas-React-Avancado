@@ -33,12 +33,12 @@ function ListaDeParticipantes() {
           Cadastrar participantes
         </Button>
       </div>
-      {participantes.length > 1 && (
+      {participantes.length > 0 && (
         <div className='flex flex-col gap-3 items-center justify-center w-[500px] p-5'>
           <h2>Participantes cadastrados:</h2>
           <ul>
-            {participantes.map((participante) => (
-              <li>{participante.nome}</li>
+            {participantes.map((participante: Participante, index: number) => (
+              <li key={index}>{participante.nome}</li>
             ))}
           </ul>
         </div>

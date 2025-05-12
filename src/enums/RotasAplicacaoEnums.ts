@@ -1,5 +1,6 @@
 export enum RotasAplicacao {
   HOME = "/",
+  PAGINA_NAO_ENCONTRADA = "*",
   MODULO_UM = "/modulo-um",
   MODULO_DOIS = "/modulo-dois",
   MODULO_DOIS_EXEMPLO_UM = "/modulo-dois/exemplo-um",
