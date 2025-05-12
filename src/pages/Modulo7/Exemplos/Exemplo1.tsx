@@ -6,7 +6,7 @@ interface BotaoProps {
   aoClicar?: () => void;
 }
 
-function ExemploUm({
+function Exemplo1({
   nome = "Botão customizado",
   aoClicar,
   desabilitado = false,
@@ -25,4 +25,4 @@ function ExemploUm({
   );
 }
 
-export default ExemploUm;
+export default Exemplo1;

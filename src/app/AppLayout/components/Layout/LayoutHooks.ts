@@ -36,6 +36,11 @@ export const useGetLayoutNavigationItems = () => {
     label: "Módulo 7",
   };
 
+  const moduloOito = {
+    link: RotasAplicacao.MODULO_OITO,
+    label: "Módulo 8",
+  };
+
   const navigationItems = [];
 
   navigationItems.push(
@@ -45,7 +50,8 @@ export const useGetLayoutNavigationItems = () => {
     moduloQuatro,
     moduloCinco,
     moduloSeis,
-    moduloSete
+    moduloSete,
+    moduloOito
   );
 
   return navigationItems;

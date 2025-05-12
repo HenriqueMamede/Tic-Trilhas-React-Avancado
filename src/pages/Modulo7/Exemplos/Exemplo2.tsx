@@ -3,11 +3,11 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { RiDeleteBinLine } from "react-icons/ri";
 
-interface ExemploDoisProps {
+interface Exemplo2Props {
   itensIniciais?: string[];
 }
 
-function ExemploDois({ itensIniciais = [] }: ExemploDoisProps) {
+function Exemplo2({ itensIniciais = [] }: Exemplo2Props) {
   const [itens, setItens] = useState<string[]>(itensIniciais);
   const [novoItem, setNovoItem] = useState("");
 
@@ -67,4 +67,4 @@ function ExemploDois({ itensIniciais = [] }: ExemploDoisProps) {
   );
 }
 
-export default ExemploDois;
+export default Exemplo2;

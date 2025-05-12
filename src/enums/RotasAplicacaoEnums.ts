@@ -24,7 +24,7 @@ export enum RotasAplicacao {
   MODULO_SEIS = "/modulo-seis",
   MODULO_SEIS_EXEMPLO_UM = "/modulo-seis/exemplo-um",
   MODULO_SETE = "/modulo-sete",
-  MODULO_SETE_EXEMPLO_CYPRESS = "/modulo-sete/exemplo-cypress", 
-  MODULO_SETE_EXEMPLO_UM_TESTE_UNITARIO = "/modulo-sete/exemplo-teste-unitario-um",
-  MODULO_SETE_EXEMPLO_DOIS_TESTE_UNITARIO = "/modulo-sete/exemplo-teste-unitario-dois"
+  MODULO_SETE_EXEMPLO_UM = "/modulo-sete/exemplo-um",
+  MODULO_SETE_EXEMPLO_DOIS = "/modulo-sete/exemplo-dois",
+  MODULO_OITO = "/modulo-oito",
 }
