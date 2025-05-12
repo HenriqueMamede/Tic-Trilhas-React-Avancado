@@ -2,9 +2,9 @@ import { useState, useMemo } from "react";
 import { Status } from "@/enums/TarefasEnums";
 import { Tarefas } from "@/types";
 import { Filtro } from "@/components";
-import { AdicionarTarefasForm, TabelaDeTarefas } from "../components";
+import { AdicionarTarefasForm, TabelaDeTarefas } from "./components";
 
-function ExemploUm() {
+const Modulo8 = () => {
   const [dados, setDados] = useState<Tarefas[]>([]);
   const [filtro, setFiltro] = useState<Status>(Status.TODAS);
 
@@ -40,6 +40,6 @@ function ExemploUm() {
       />
     </div>
   );
-}
+};
 
-export default ExemploUm;
+export default Modulo8;

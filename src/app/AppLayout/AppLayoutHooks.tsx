@@ -3,11 +3,11 @@ import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 import Home from "@/pages/Home";
 import ModuloUm from "@/pages/Modulo1";
 import ModuloDois from "@/pages/Modulo2";
-import ModuloDoisExemploUm from '@/pages/Modulo2/Exemplos/Exemplo1';
-import ModuloDoisExemploDois from '@/pages/Modulo2/Exemplos/Exemplo2';
-import ModuloDoisExemploTres from '@/pages/Modulo2/Exemplos/Exemplo3';
-import ModuloDoisExemploQuatro from '@/pages/Modulo2/Exemplos/Exemplo4';
-import ModuloDoisExemploCinco from '@/pages/Modulo2/Exemplos/Exemplo5';
+import ModuloDoisExemploUm from "@/pages/Modulo2/Exemplos/Exemplo1";
+import ModuloDoisExemploDois from "@/pages/Modulo2/Exemplos/Exemplo2";
+import ModuloDoisExemploTres from "@/pages/Modulo2/Exemplos/Exemplo3";
+import ModuloDoisExemploQuatro from "@/pages/Modulo2/Exemplos/Exemplo4";
+import ModuloDoisExemploCinco from "@/pages/Modulo2/Exemplos/Exemplo5";
 import ModuloTres from "@/pages/Modulo3";
 import ModuloTresExemploUm from "@/pages/Modulo3/Exemplos/Exemplo1";
 import ModuloTresExemploDois from "@/pages/Modulo3/Exemplos/Exemplo2";
@@ -23,10 +23,9 @@ import ModuloCincoExemploTres from "@/pages/Modulo5/Exemplos/Exemplo3";
 import ModuloCincoExemploQuatro from "@/pages/Modulo5/Exemplos/Exemplo4";
 import ModuloSeis from "@/pages/Modulo6";
 import ModuloSete from "@/pages/Modulo7";
-import ModuloSeteExemploCypress from "@/pages/Modulo7/ExemplosCypress/Exemplo1";
-import ModuloSeteExemploUmTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo1";
-import ModuloSeteExemploDoisTestesUnitarios from "@/pages/Modulo7/ExemplosTestesUnitarios/Exemplo2";
-
+import ModuloSeteExemploUm from "@/pages/Modulo7/Exemplos/Exemplo1";
+import ModuloSeteExemploDois from "@/pages/Modulo7/Exemplos/Exemplo2";
+import ModuloOito from "@/pages/Modulo8";
 
 export function useAppRoutes() {
   const rotas = [
@@ -123,16 +122,16 @@ export function useAppRoutes() {
       caminho: RotasAplicacao.MODULO_SETE,
     },
     {
-      Pagina: ModuloSeteExemploCypress,
-      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_CYPRESS,
+      Pagina: ModuloSeteExemploUm,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM,
     },
     {
-      Pagina: ModuloSeteExemploUmTestesUnitarios,
-      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM_TESTE_UNITARIO,
+      Pagina: ModuloSeteExemploDois,
+      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS,
     },
     {
-      Pagina: ModuloSeteExemploDoisTestesUnitarios,
-      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS_TESTE_UNITARIO,
+      Pagina: ModuloOito,
+      caminho: RotasAplicacao.MODULO_OITO,
     },
   ];
 

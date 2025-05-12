@@ -6,11 +6,11 @@ interface BotaoProps {
   aoClicar?: () => void;
 }
 
-function ExemploUm({
+const Exemplo1 = ({
   nome = "Botão customizado",
   aoClicar,
   desabilitado = false,
-}: BotaoProps) {
+}: BotaoProps) => {
   return (
     <div className="flex items-center justify-center h-screen">
       <Button
@@ -25,4 +25,4 @@ function ExemploUm({
   );
 }
 
-export default ExemploUm;
+export default Exemplo1;
