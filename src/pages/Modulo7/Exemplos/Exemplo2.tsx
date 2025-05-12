@@ -7,7 +7,7 @@ interface Exemplo2Props {
   itensIniciais?: string[];
 }
 
-const Exemplo2 = ({ itensIniciais = [] }: Exemplo2Props) => {
+function Exemplo2({ itensIniciais = [] }: Exemplo2Props) {
   const [itens, setItens] = useState<string[]>(itensIniciais);
   const [novoItem, setNovoItem] = useState("");
 
@@ -65,6 +65,6 @@ const Exemplo2 = ({ itensIniciais = [] }: Exemplo2Props) => {
       </ul>
     </div>
   );
-};
+}
 
 export default Exemplo2;

@@ -6,11 +6,11 @@ interface BotaoProps {
   aoClicar?: () => void;
 }
 
-const Exemplo1 = ({
+function Exemplo1({
   nome = "Botão customizado",
   aoClicar,
   desabilitado = false,
-}: BotaoProps) => {
+}: BotaoProps) {
   return (
     <div className="flex items-center justify-center h-screen">
       <Button

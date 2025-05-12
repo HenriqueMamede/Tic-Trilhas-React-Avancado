@@ -19,11 +19,11 @@ interface TabelaDeTarefasProps {
   mudarStatus: (id: number) => void;
 }
 
-const TabelaDeTarefas = ({
+function TabelaDeTarefas({
   tarefas,
   removerTarefa,
   mudarStatus,
-}: TabelaDeTarefasProps) => {
+}: TabelaDeTarefasProps) {
   if (!tarefas.length) return <EmptyState />;
 
   return (
@@ -82,6 +82,6 @@ const TabelaDeTarefas = ({
       </TableBody>
     </Table>
   );
-};
+}
 
 export default TabelaDeTarefas;

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { RotasAplicacao } from "@/enums/RotasAplicacaoEnums";
 import { useNavigate } from "react-router-dom";
 
-const Modulo7 = () => {
+function Modulo7() {
   const navigate = useNavigate();
 
   const exemplos = [
@@ -44,6 +44,6 @@ const Modulo7 = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Modulo7;
