@@ -28,117 +28,117 @@ import ModuloSeteExemploUm from "@/pages/Modulo7/Exemplos/Exemplo1";
 import ModuloSeteExemploDois from "@/pages/Modulo7/Exemplos/Exemplo2";
 import ModuloOito from "@/pages/Modulo8";
 
-export function useAppRoutes() {
-  const rotas = [
-    {
-      Pagina: Home,
-      caminho: RotasAplicacao.HOME,
-    },
-    {
-      Pagina: ModuloUm,
-      caminho: RotasAplicacao.MODULO_UM,
-    },
-    {
-      Pagina: ModuloDois,
-      caminho: RotasAplicacao.MODULO_DOIS,
-    },
-    {
-      Pagina: ModuloDoisExemploUm,
-      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloDoisExemploDois,
-      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_DOIS,
-    },
-    {
-      Pagina: ModuloDoisExemploTres,
-      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_TRES,
-    },
-    {
-      Pagina: ModuloDoisExemploQuatro,
-      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_QUATRO,
-    },
-    {
-      Pagina: ModuloDoisExemploCinco,
-      caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_CINCO,
-    },
-    {
-      Pagina: ModuloTres,
-      caminho: RotasAplicacao.MODULO_TRES,
-    },
-    {
-      Pagina: ModuloTresExemploUm,
-      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloTresExemploDois,
-      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_DOIS,
-    },
-    {
-      Pagina: ModuloTresExemploTres,
-      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_TRES,
-    },
-    {
-      Pagina: ModuloTresExemploQuatro,
-      caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_QUATRO,
-    },
-    {
-      Pagina: ModuloQuatro,
-      caminho: RotasAplicacao.MODULO_QUATRO,
-    },
-    {
-      Pagina: ModuloQuatroExemploUm,
-      caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloQuatroExemploDois,
-      caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_DOIS,
-    },
-    {
-      Pagina: ModuloCinco,
-      caminho: RotasAplicacao.MODULO_CINCO,
-    },
-    {
-      Pagina: ModuloCincoExemploUm,
-      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloCincoExemploDois,
-      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_DOIS,
-    },
-    {
-      Pagina: ModuloCincoExemploTres,
-      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_TRES,
-    },
-    {
-      Pagina: ModuloCincoExemploQuatro,
-      caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_QUATRO,
-    },
-    {
-      Pagina: ModuloSeis,
-      caminho: RotasAplicacao.MODULO_SEIS,
-    },
-    {
-      Pagina: ModuloSeisExemploUm,
-      caminho: RotasAplicacao.MODULO_SEIS_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloSete,
-      caminho: RotasAplicacao.MODULO_SETE,
-    },
-    {
-      Pagina: ModuloSeteExemploUm,
-      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM,
-    },
-    {
-      Pagina: ModuloSeteExemploDois,
-      caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS,
-    },
-    {
-      Pagina: ModuloOito,
-      caminho: RotasAplicacao.MODULO_OITO,
-    },
-  ];
+export const useAppRoutes = () => {
+    const rotas = [
+        {
+            Pagina: Home,
+            caminho: RotasAplicacao.HOME
+        },
+        {
+            Pagina: ModuloUm,
+            caminho: RotasAplicacao.MODULO_UM
+        },
+        {
+            Pagina: ModuloDois,
+            caminho: RotasAplicacao.MODULO_DOIS
+        },
+        {
+            Pagina: ModuloDoisExemploUm,
+            caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloDoisExemploDois,
+            caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_DOIS
+        },
+        {
+            Pagina: ModuloDoisExemploTres,
+            caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_TRES
+        },
+        {
+            Pagina: ModuloDoisExemploQuatro,
+            caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_QUATRO
+        },
+        {
+            Pagina: ModuloDoisExemploCinco,
+            caminho: RotasAplicacao.MODULO_DOIS_EXEMPLO_CINCO
+        },
+        {
+            Pagina: ModuloTres,
+            caminho: RotasAplicacao.MODULO_TRES
+        },
+        {
+            Pagina: ModuloTresExemploUm,
+            caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloTresExemploDois,
+            caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_DOIS
+        },
+        {
+            Pagina: ModuloTresExemploTres,
+            caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_TRES
+        },
+        {
+            Pagina: ModuloTresExemploQuatro,
+            caminho: RotasAplicacao.MODULO_TRES_EXEMPLO_QUATRO
+        },
+        {
+            Pagina: ModuloQuatro,
+            caminho: RotasAplicacao.MODULO_QUATRO
+        },
+        {
+            Pagina: ModuloQuatroExemploUm,
+            caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloQuatroExemploDois,
+            caminho: RotasAplicacao.MODULO_QUATRO_EXEMPLO_DOIS
+        },
+        {
+            Pagina: ModuloCinco,
+            caminho: RotasAplicacao.MODULO_CINCO
+        },
+        {
+            Pagina: ModuloCincoExemploUm,
+            caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloCincoExemploDois,
+            caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_DOIS
+        },
+        {
+            Pagina: ModuloCincoExemploTres,
+            caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_TRES
+        },
+        {
+            Pagina: ModuloCincoExemploQuatro,
+            caminho: RotasAplicacao.MODULO_CINCO_EXEMPLO_QUATRO
+        },
+        {
+            Pagina: ModuloSeis,
+            caminho: RotasAplicacao.MODULO_SEIS
+        },
+        {
+            Pagina: ModuloSeisExemploUm,
+            caminho: RotasAplicacao.MODULO_SEIS_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloSete,
+            caminho: RotasAplicacao.MODULO_SETE
+        },
+        {
+            Pagina: ModuloSeteExemploUm,
+            caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_UM
+        },
+        {
+            Pagina: ModuloSeteExemploDois,
+            caminho: RotasAplicacao.MODULO_SETE_EXEMPLO_DOIS
+        },
+        {
+            Pagina: ModuloOito,
+            caminho: RotasAplicacao.MODULO_OITO
+        }
+    ];
 
-  return rotas;
-}
+    return rotas;
+};
