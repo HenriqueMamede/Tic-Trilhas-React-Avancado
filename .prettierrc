@@ -2,7 +2,7 @@
     "arrowParens": "always",
     "bracketSpacing": true,
     "jsxBracketSameLine": true,
-    "printWidth": 180,
+    "printWidth": 80,
     "tabWidth": 4,
     "trailingComma": "none"
 }
