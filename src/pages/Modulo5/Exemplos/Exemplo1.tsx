@@ -1,11 +1,36 @@
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+interface IDadosFormulario {
+    email: string;
+    senha: string;
+}
+const loginSchema = yup.object({
+    email: yup.string().email("Email inválido").required("Email é obrigatório"),
+    senha: yup.string().required("Senha é obrigatória")
+});
+
 const Exemplo1 = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+        reset
+    } = useForm<IDadosFormulario>({ resolver: yupResolver(loginSchema) });
+
+    const onSubmit = (dadosDoFormulario: IDadosFormulario) => {
+        console.log(dadosDoFormulario);
+    };
+
     return (
         <div className="flex items-center justify-center h-screen">
-            <div className="flex flex-col gap-3 items-center justify-center w-[500px] p-5 border-2 border-solid border-gray-100 rounded-2xl">
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-col gap-3 items-center justify-center w-[500px] p-5 border-2 border-solid border-gray-100 rounded-2xl">
                 <h1 className="text-xl text-neutral-800">Login</h1>
                 <div className="flex flex-col gap-2 w-[300px]">
                     <div className="flex flex-col gap-2 w-[300px]">
@@ -13,9 +38,9 @@ const Exemplo1 = () => {
                             Email <span className="text-red-500">*</span>
                         </Label>
                         <div>
-                            <Input id="email" />
+                            <Input id="email" {...register("email")} />
                             <p className="text-red-500 text-sm">
-                                mensagem de erro
+                                {errors?.email?.message}
                             </p>
                         </div>
                     </div>
@@ -24,9 +49,13 @@ const Exemplo1 = () => {
                             Senha <span className="text-red-500">*</span>
                         </Label>
                         <div>
-                            <Input id="senha" type="password" />
+                            <Input
+                                id="senha"
+                                type="password"
+                                {...register("senha")}
+                            />
                             <p className="text-red-500 text-sm">
-                                mensagem de erro
+                                {errors?.senha?.message}
                             </p>
                         </div>
                     </div>
@@ -35,6 +64,7 @@ const Exemplo1 = () => {
                             Entrar
                         </Button>
                         <Button
+                            onClick={() => reset()}
                             type="button"
                             variant="outline"
                             className="cursor-pointer">
@@ -42,7 +72,7 @@ const Exemplo1 = () => {
                         </Button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     );
 };
