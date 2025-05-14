@@ -47,7 +47,7 @@ const ModuloUm = () => {
 
         // Começa um intervalo qualquer
         intervalRef.current = setInterval(() => {
-            console.log(`[Interval] Usuário atual: ${mockUser.name}`);
+            //  console.log(`[Interval] Usuário atual: ${mockUser.name}`);
         }, 3000);
     };
 
