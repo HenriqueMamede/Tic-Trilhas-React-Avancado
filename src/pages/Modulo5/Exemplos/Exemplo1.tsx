@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import * as Yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,13 +10,20 @@ interface IDadosFormulario {
     senha: string;
 }
 
+const schema = Yup.object({
+    email: Yup.string().email("Email invalido").required("Email obrigatorio"),
+    senha: Yup.string().required("Senha é obrigatoria")
+});
+
 const Exemplo1 = () => {
     const {
         register,
         handleSubmit,
         formState: { errors },
         reset
-    } = useForm<IDadosFormulario>();
+    } = useForm<IDadosFormulario>({
+        resolver: yupResolver(schema)
+    });
 
     const onSubmit = (dadosDoFormulario: IDadosFormulario) => {
         console.log(dadosDoFormulario);
