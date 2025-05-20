@@ -20,4 +20,30 @@ describe("Testando a Lista Interativa", () => {
         cy.get(`[data-testid="input-tarefa"]`).type("Tarefa 1");
         cy.get(`[data-testid="adicionar-tarefa"]`).should("not.be.disabled");
     });
+
+    it("Ao adicionar uma tarefa deve apareer na lista de tarefas da tabela", () => {
+        cy.get(`[data-testid="sem-dados"]`).should("be.visible");
+        cy.get(`[data-testid="input-tarefa"]`).type("Tarefa 1");
+        cy.get(`[data-testid="adicionar-tarefa"]`).click();
+        cy.get(`[data-testid="sem-dados"]`).should("not.exist");
+        cy.get(`[data-testid="texto-tarefa"]`)
+            .eq(0)
+            .should("contain", "Tarefa 1");
+
+        cy.get(`[data-testid="status-tarefas"]`)
+            .eq(0)
+            .should("contain", "Não finalizada");
+    });
+
+    it("Deve ser possível remover uma tarefa", () => {
+        cy.get(`[data-testid="input-tarefa"]`).type("Tarefa 1");
+        cy.get(`[data-testid="adicionar-tarefa"]`).click();
+        cy.get(`[data-testid="input-tarefa"]`).type("Tarefa 2");
+        cy.get(`[data-testid="adicionar-tarefa"]`).click();
+        cy.get(`[data-testid="remover-tarefa"]`).eq(0).click();
+        cy.get(`[data-testid="texto-tarefa"]`).should(
+            "not.contain",
+            "Tarefa 1"
+        );
+    });
 });
