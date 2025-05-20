@@ -46,4 +46,30 @@ describe("Testando a Lista Interativa", () => {
             "Tarefa 1"
         );
     });
+
+    it('Deve ser possivel marcar uma tarefa como "finalizada"', () => {
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 1");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="status-tarefas"]')
+            .eq(0)
+            .should("contain", "Finalizada");
+        cy.get('[data-testid="icone-finalizada"]').eq(0).should("be.visible");
+    });
+
+    it('Deve ser possivel marcar uma tarefa como "não finalizada"', () => {
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 1");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="status-tarefas"]')
+            .eq(0)
+            .should("contain", "Finalizada");
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="status-tarefas"]')
+            .eq(0)
+            .should("contain", "Não finalizada");
+        cy.get('[data-testid="icone-nao-finalizada"]')
+            .eq(0)
+            .should("be.visible");
+    });
 });
