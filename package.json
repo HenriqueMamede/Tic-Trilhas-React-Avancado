@@ -9,7 +9,8 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "format": "prettier --write .",
-        "test": "vitest"
+        "test": "vitest",
+        "cy:open": "cypress open"
     },
     "dependencies": {
         "@hookform/resolvers": "^5.0.1",
@@ -40,6 +41,7 @@
         "@types/react": "^19.1.4",
         "@types/react-dom": "^19.1.5",
         "@vitejs/plugin-react": "^4.3.4",
+        "cypress": "^14.3.3",
         "eslint": "^9.19.0",
         "eslint-plugin-react-hooks": "^5.0.0",
         "eslint-plugin-react-refresh": "^0.4.18",
