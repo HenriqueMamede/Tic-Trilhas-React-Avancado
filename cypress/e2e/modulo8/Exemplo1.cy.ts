@@ -72,4 +72,50 @@ describe("Testando a Lista Interativa", () => {
             .eq(0)
             .should("be.visible");
     });
+
+    it("Deve ser possivel filtrar as tarefas finalizadas", () => {
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 1");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 2");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="filtro-finalizadas"]').click();
+        cy.get('[data-testid="status-tarefas"]').each(($status) => {
+            cy.wrap($status).should("contain", "Finalizada");
+        });
+        cy.get('[data-testid="label-filtro').should(
+            "contain",
+            "Visualizando: Tarefas finalizadas"
+        );
+    });
+
+    it("Deve ser possivel filtrar as tarefas não finalizadas", () => {
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 1");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 2");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="filtro-nao-finalizadas"]').click();
+        cy.get('[data-testid="status-tarefas"]').each(($status) => {
+            cy.wrap($status).should("contain", "Não finalizada");
+        });
+        cy.get('[data-testid="label-filtro').should(
+            "contain",
+            "Visualizando: Tarefas não finalizadas"
+        );
+    });
+
+    it("Deve ser possivel filtrar todas as tarefas", () => {
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 1");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="input-tarefa"]').type("Tarefa 2");
+        cy.get('[data-testid="adicionar-tarefa"]').click();
+        cy.get('[data-testid="mudar-status"]').eq(0).click();
+        cy.get('[data-testid="filtro-todas"]').click();
+        cy.get('[data-testid="label-filtro').should(
+            "contain",
+            "Visualizando: Todas tarefas"
+        );
+        cy.get('[data-testid="status-tarefas"]').should("have.length", 2);
+    });
 });
