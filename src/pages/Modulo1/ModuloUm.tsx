@@ -11,10 +11,44 @@ const ModuloUm = () => {
     const intervalRef = useRef<NodeJS.Timeout | null>(null); // Definindo o tipo de intervalRef
 
     // Simula o ComponentDidMount
+    useEffect(()=> {
+        console.log("Buscando dados do usuario")
+        fetchUser();
+
+        return () => {
+            console.log("Unmount");
+            if(intervalRef.current) {
+                console.log("Limpando intervalo")
+                clearInterval(intervalRef.current)
+            }
+        }
+    }, [])
 
     // Simula o ComponentDidUpdate
+    useEffect(()=> {
+        if(user?.name) {
+            document.title = `Bem vindo, ${user.name}`
+            console.log("Update Titulo do documento atualizado")
+        }
+    }, [user?.name])
 
     // Simula a chamada de API
+    const fetchUser = async () => {
+        const mockUser = await new Promise<User>((resolve) => 
+        setTimeout(()=> resolve({name: "Lais", age: 29}), 1000))
+
+        setUser(mockUser)
+
+        // Começar un intervalo qualquer
+        intervalRef.current = setInterval(()=> {
+            console.log(`Interval Usuario atual: ${mockUser.name}`)
+        },3000
+    )
+    };
+
+    useLayoutEffect(()=> {
+        console.log("useLayoutEffect Antes da pintura do DOM")
+    })
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#fafafa] to-[#6EB8E2] p-6">
