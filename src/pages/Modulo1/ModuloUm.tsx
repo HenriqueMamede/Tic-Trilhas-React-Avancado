@@ -10,6 +10,12 @@ const ModuloUm = () => {
     const [user, setUser] = useState<User | null>(null);
     const intervalRef = useRef<NodeJS.Timeout | null>(null); // Definindo o tipo de intervalRef
 
+    // Simula o ComponentDidMount
+
+    // Simula o ComponentDidUpdate
+
+    // Simula a chamada de API
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#fafafa] to-[#6EB8E2] p-6">
             <div className="text-center max-w-2xl p-8 bg-opacity-80 rounded-lg shadow-xl bg-white">
