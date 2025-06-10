@@ -17,18 +17,18 @@ const schema = Yup.object({
     nome: Yup.string()
         .trim()
         .min(3, "Nome muito pequeno")
-        .required("Nome é obrigatorio"),
-    sobrenome: Yup.string().trim().required("Sobrenome é obrigatorio"),
+        .required("Nome é obrigatório"),
+    sobrenome: Yup.string().trim().required("Sobrenome é obrigatório"),
     email: Yup.string()
         .trim()
-        .email("Email invalido")
-        .required("Email é obrigatorio"),
+        .email("Email inválido")
+        .required("Email é obrigatório"),
     senha: Yup.string()
         .min(8, "Senha com pelo menos 8 caracteres")
         .required("Senha é obrigatório"),
     confirmarSenha: Yup.string()
         .oneOf([Yup.ref("senha")], "As senhas precisam ser iguais")
-        .required("Confirmar senha é obrigatorio")
+        .required("Confirmar senha é obrigatório")
 });
 
 const Exemplo2 = () => {

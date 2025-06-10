@@ -11,8 +11,8 @@ interface IDadosFormulario {
 }
 
 const schema = Yup.object({
-    email: Yup.string().email("Email invalido").required("Email obrigatorio"),
-    senha: Yup.string().required("Senha é obrigatoria")
+    email: Yup.string().email("Email inválido").required("Email obrigatório"),
+    senha: Yup.string().required("Senha é obrigatória")
 });
 
 const Exemplo1 = () => {
