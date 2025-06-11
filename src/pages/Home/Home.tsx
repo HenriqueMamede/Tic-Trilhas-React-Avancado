@@ -16,7 +16,7 @@ const Home = () => {
                     Bem-vindo a trilha Dominando React
                 </h1>
                 <p className="text-lg font-light mb-4">
-                    Parabéns por iniciar esta jornada na trilha dominando React
+                    Parabéns por iniciar esta jornada na trilha Dominando React
                     do programa TIC em Trilhas! Estamos empolgados em acompanhar
                     seu progresso e ajudá-lo a se tornar um expert em React.
                 </p>
