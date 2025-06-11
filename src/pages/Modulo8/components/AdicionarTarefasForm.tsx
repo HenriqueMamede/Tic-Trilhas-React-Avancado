@@ -30,7 +30,7 @@ const AdicionarTarefasForm = ({ setDados }: AdicionarTarefasFormProps) => {
             className="flex gap-3 items-center w-full"
             onSubmit={lidarComAdicaoDeTarefas}>
             <Input
-                data-testid="tarefa"
+                data-testid="input-tarefa"
                 placeholder="Adicionar tarefas"
                 value={adicionarTarefa}
                 onChange={(e) => setAdicionarTarefa(e.target.value)}
