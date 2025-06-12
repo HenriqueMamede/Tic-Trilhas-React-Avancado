@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useDeferredValue } from "react";
 import { Input } from "@/components/ui/input.tsx";
 
 interface Item {
@@ -23,10 +23,12 @@ const Exemplo3 = () => {
     // Estado para armazenar o termo de busca
     const [busca, setBusca] = useState("");
 
+    const buscaAdiada = useDeferredValue(busca);
+
     // Filtrando os itens com o termo de busca
     const itensFiltrados = useMemo(
-        () => buscaItens(busca, itens),
-        [busca, itens]
+        () => buscaItens(buscaAdiada, itens),
+        [buscaAdiada, itens]
     );
 
     return (
