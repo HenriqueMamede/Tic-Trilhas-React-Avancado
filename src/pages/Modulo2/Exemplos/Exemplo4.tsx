@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useTransition } from "react";
 import { Input } from "@/components/ui/input.tsx";
 
 interface Item {
@@ -14,6 +14,7 @@ const Exemplo4 = () => {
     }, []);
 
     const [filtro, setFiltro] = useState("");
+    const [estaPendente, comecarTransicao] = useTransition();
 
     // Função para filtrar itens
     const itensFiltrados = useMemo(
@@ -26,7 +27,9 @@ const Exemplo4 = () => {
 
     // Função para atualizar filtro
     const atualizaFiltro = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFiltro(e.target.value);
+        comecarTransicao(() => {
+            setFiltro(e.target.value);
+        });
     };
 
     return (
@@ -42,7 +45,8 @@ const Exemplo4 = () => {
             </div>
             <div className="flex flex-col gap-4 max-h-[50%] w-md">
                 <h2 className="text-center text-2xl">Resultados</h2>
-                {itensFiltrados.length > 0 && (
+                {estaPendente && <p>Carregando...</p>}
+                {!estaPendente && itensFiltrados.length > 0 && (
                     <>
                         <div className="overflow-auto">
                             <ul>
@@ -54,7 +58,9 @@ const Exemplo4 = () => {
                         <p>Itens encontrados: {itensFiltrados.length}</p>
                     </>
                 )}
-                {itensFiltrados.length === 0 && <p>Nenhum item encontrado.</p>}
+                {!estaPendente && itensFiltrados.length === 0 && (
+                    <p>Nenhum item encontrado.</p>
+                )}
             </div>
         </div>
     );
