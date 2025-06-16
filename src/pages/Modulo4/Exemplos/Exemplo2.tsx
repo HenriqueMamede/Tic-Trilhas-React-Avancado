@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
     Table,
     TableBody,
@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/table";
 import { Filtro } from "@/components";
 import { Status } from "@/enums/TarefasEnums";
-import { Tarefas } from "@/types";
 
 const tarefas = [
     { id: 1, texto: "Fazer café", finalizada: true },
@@ -20,17 +19,12 @@ const tarefas = [
 
 const Exemplo2 = () => {
     const [filtro, setFiltro] = useState<Status>(Status.TODAS);
-    const [tarefasFiltradas, setTarefasFiltradas] = useState<Tarefas[]>([]);
 
-    // Uso do useEffect para filtrar as tarefas finalizadas
-    useEffect(() => {
-        const filtradas = tarefas.filter((tarefa) => {
-            if (filtro === Status.FINALIZADAS) return tarefa.finalizada;
-            if (filtro === Status.NAO_FINALIZADAS) return !tarefa.finalizada;
-            return true;
-        });
-        setTarefasFiltradas(filtradas);
-    }, [filtro]);
+    const tarefasFiltradas = tarefas.filter((tarefa) => {
+        if (filtro === Status.FINALIZADAS) return tarefa.finalizada;
+        if (filtro === Status.NAO_FINALIZADAS) return !tarefa.finalizada;
+        return true;
+    });
 
     return (
         <div className="flex flex-col gap-6 w-full p-5">
