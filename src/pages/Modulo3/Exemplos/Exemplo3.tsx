@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input.tsx";
 
 const Exemplo3 = () => {
     const [busca, setBusca] = useState("");
+    const [buscaDebounced, setBuscaDebounced] = useState("");
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setBuscaDebounced(busca); // Atualiza o valor com debounce
+        }, 500);
+
+        return () => clearTimeout(timer); // Limpa o temporizador anterior
+    }, [busca]);
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">
@@ -13,7 +22,7 @@ const Exemplo3 = () => {
                     onChange={(e) => setBusca(e.target.value)}
                     placeholder="Digite para buscar..."
                 />
-                <p>Resultado da busca: {busca}</p>
+                <p>Resultado da busca: {buscaDebounced}</p>
             </div>
         </div>
     );
