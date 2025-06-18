@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Tic em Trilhas: Dominando React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido para a Trilha Dominando React, com o intuito de ser utilizado como base para as implementações das técnicas demonstradas nas aulas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [**React 19**](https://react.dev/)
+- [**TypeScript**](https://www.typescriptlang.org/)
+- [**Vite**](https://vite.dev/)
+- [**Tailwind CSS**](https://tailwindcss.com/)
+- [**React Router**](https://reactrouter.com/)
+- [**shadcn/ui**](https://ui.shadcn.com/)
+- [**React Query (TanStack Query)**](https://tanstack.com/query/latest/docs/framework/react/overview)
+- [**Lucide React**](https://lucide.dev/guide/packages/lucide-react)
+- [**React Icons**](https://react-icons.github.io/react-icons/)
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de começar, certifique-se de ter instalado:
 
--   Configure the top-level `parserOptions` property like this:
+- [**Node.js**](https://nodejs.org/pt) (versão 18 ou superior)
+- **npm**
 
-```js
-export default tseslint.config({
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-            tsconfigRootDir: import.meta.dirname
-        }
-    }
-});
+Para verificar se você tem o Node.js instalado, execute:
+```bash
+node --version
+npm --version
 ```
 
--   Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
--   Optionally add `...tseslint.configs.stylisticTypeChecked`
--   Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔧 Instalação e Configuração
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+### 1. Clone o repositório
 
-export default tseslint.config({
-    // Set the react version
-    settings: { react: { version: "18.3" } },
-    plugins: {
-        // Add the react plugin
-        react
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended rules
-        ...react.configs.recommended.rules,
-        ...react.configs["jsx-runtime"].rules
-    }
-});
+```bash
+git clone https://github.com/HenriqueMamede/Tic-Trilhas-React-Avancado.git
+cd Tic-Trilhas-React-Avancado
 ```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Execute o projeto em modo de desenvolvimento
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em `http://localhost:5173`
+
+## 📜 Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run lint` - Executa o linter para verificar o código
+- `npm run format` - Formata o código usando Prettier
+
+## 🏗️ Estrutura do Projeto
+
+```
+src/
+├── app/                    # Diretório principal da aplicação
+│   ├── AppLayout/          # Layout e roteamento da aplicação
+│   └── App.tsx             # Componente raiz
+├── components/             # Componentes reutilizáveis
+├── pages/                  # Páginas da aplicação
+│   ├── Home/               # Página inicial
+│   ├── Modulo1/            # Módulo 1
+│   ├── Modulo2/            # Módulo 2
+│   └── ...                 # Outros módulos
+├── enums/                  # Enumerações TypeScript
+├── types/                  # Definições de tipos
+├── lib/                    # Utilitários e configurações
+└── assets/                 # Recursos
+```
+
+## 🆘 Suporte
+
+Se você encontrar algum problema ou tiver dúvidas, por favor abra um novo tópico no fórum da Trilha no Tic em Trilhas.
+
