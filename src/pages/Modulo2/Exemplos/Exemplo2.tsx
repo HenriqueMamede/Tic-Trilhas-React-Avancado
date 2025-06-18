@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
 
 interface IUsuario {
@@ -18,7 +18,9 @@ const usuarios: IUsuario[] = [
 
 const Exemplo2 = () => {
     // Filtragem de usuários ativos, executada toda vez que o componente for renderizado
-    const usuariosAtivos = usuarios.filter((usuario) => usuario.ativo);
+    const usuariosAtivos = useMemo(() => {
+        return usuarios.filter((usuario) => usuario.ativo);
+    }, []);
 
     // Ao atualizar este estado, o componente será renderizado novamente
     const [contagemNotificacoes, setContagemNotificacoes] = useState(0);
