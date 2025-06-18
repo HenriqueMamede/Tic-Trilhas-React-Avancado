@@ -1,4 +1,8 @@
-import ComponenteDemorado from "@/pages/Modulo3/components/ComponenteDemorado";
+import { lazy, Suspense } from "react";
+
+const ComponenteDemorado = lazy(
+    () => import("@/pages/Modulo3/components/ComponenteDemorado")
+);
 
 const Exemplo1 = () => {
     return (
@@ -6,7 +10,9 @@ const Exemplo1 = () => {
             <h1 className="text-2xl">Exemplo sem React.lazy</h1>
 
             <div className="p-4 bg-gray-300 rounded-lg">
-                <ComponenteDemorado />
+                <Suspense fallback={<div>Carregando componente...</div>}>
+                    <ComponenteDemorado />
+                </Suspense>
             </div>
         </div>
     );

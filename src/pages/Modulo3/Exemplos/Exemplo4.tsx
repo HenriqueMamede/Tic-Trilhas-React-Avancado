@@ -4,14 +4,27 @@ const Exemplo4 = () => {
     const [posScroll, setPosScroll] = useState(0);
 
     useEffect(() => {
+        let idTimeout: number;
+
         const atualizaPosScroll = () => {
             setPosScroll(window.scrollY);
         };
 
-        window.addEventListener("scroll", atualizaPosScroll);
+        const throttleScroll = () => {
+            if (idTimeout) {
+                clearTimeout(idTimeout);
+            }
+
+            idTimeout = window.setTimeout(() => {
+                atualizaPosScroll();
+            }, 200);
+        };
+
+        window.addEventListener("scroll", throttleScroll);
 
         return () => {
-            window.removeEventListener("scroll", atualizaPosScroll);
+            window.removeEventListener("scroll", throttleScroll);
+            clearTimeout(idTimeout);
         };
     }, []);
 
