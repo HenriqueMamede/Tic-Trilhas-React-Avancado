@@ -1,20 +1,20 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
-import { useEffect, useState } from "react";
 
 const Exemplo1 = () => {
     const [dadosDoFomulario, setDadosDoFomulario] = useState({
         nome: "",
         email: ""
     });
-    const [nome, setNome] = useState("");
-    const [email, setEmail] = useState("");
 
-    // Uso do useEffect para sincronizar os dados de nome e email
-    useEffect(() => {
-        setDadosDoFomulario({ nome, email });
-    }, [nome, email]);
+    const atualizarCampoFormulario = (valor: string, campo: string) => {
+        setDadosDoFomulario((estadoAnterior) => ({
+            ...estadoAnterior,
+            [campo]: valor
+        }));
+    };
 
     const submeterFormulario = (e: React.FormEvent) => {
         e.preventDefault();
@@ -32,8 +32,10 @@ const Exemplo1 = () => {
                     <Input
                         id="nome"
                         type="text"
-                        value={nome}
-                        onChange={(e) => setNome(e.target.value)}
+                        value={dadosDoFomulario.nome}
+                        onChange={(e) =>
+                            atualizarCampoFormulario(e.target.value, "nome")
+                        }
                         placeholder="Nome"
                         className="h-8 py-0.5 px-2.5 border border-solid border-gray-100 text-neutral-800 rounded"
                     />
@@ -43,8 +45,10 @@ const Exemplo1 = () => {
                     <Input
                         id="email"
                         type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={dadosDoFomulario.email}
+                        onChange={(e) =>
+                            atualizarCampoFormulario(e.target.value, "email")
+                        }
                         placeholder="Email"
                         className="h-8 py-0.5 px-2.5 border border-solid border-gray-100 text-neutral-800 rounded"
                     />
@@ -52,7 +56,9 @@ const Exemplo1 = () => {
                 <Button
                     type="submit"
                     className="cursor-pointer w-[100%]"
-                    disabled={!nome || !email}>
+                    disabled={
+                        !dadosDoFomulario.nome || !dadosDoFomulario.email
+                    }>
                     Enviar
                 </Button>
             </form>
