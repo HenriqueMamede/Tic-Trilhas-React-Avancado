@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
 import BotaoReset from "@/pages/Modulo2/Exemplos/components/BotaoReset.tsx";
 
@@ -8,7 +8,7 @@ const Exemplo1 = () => {
 
     // Funções para incrementar o contador e resetar o contador
     const incrementaContador = () => setContador((prev) => prev + 1);
-    const resetaContador = () => setContador(0);
+    const resetaContador = useCallback(() => setContador(0), []);
 
     return (
         <div className="flex flex-col gap-6 items-center justify-center h-screen">
